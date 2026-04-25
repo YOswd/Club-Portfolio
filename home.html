@@ -3,50 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardware Accelaration Club of KUET</title>
+    <title>Hardware Acceleration Club of KUET</title>
     <link rel="stylesheet" href="home.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <header>
-    <h1>WELCOME TO HARDWARE ACCELARATION CLUB OF KUET</h1>
-    <p>The ultimate hub for hardware enthusiasts.</p>
-    <button class="select">JOIN US</button>
+    <header class="hero">
+        <h1>Hardware Acceleration Club</h1>
+        <p>KUET | The hub for hardware & IoT enthusiasts</p>
+        <button class="btn">Join Us</button>
     </header>
-    <section>
-    <h3>About Us</h3>
-    <h1>HARDWARE ACCELARATION CLUB OF KUET</h1>
-    <p>The Hardware Accelaration Club of KUET, An Inclusive Platform For All Kuetians Passionate About Hardware And IOT. Our Mission Is To Inspire And Empower Students From Diverse Backgrounds To Explore For Embedded World.</p>
-    <button class="select">LEARN MORE</button>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            We are a community of KUET students passionate about hardware,
+            embedded systems, and IoT. Our mission is to inspire innovation
+            and hands-on learning.
+        </p>
     </section>
-    <section>
-    <h4>OUR FOCUS</h4>
-    <h1>WE ARE WORKING WITH</h1>
-    <button class="select">SEE ALL</button>
-    <div>
-        <h3>LINE FOLLOWER ROBOT(LFR)</h3>
-        <p>DESIGN AND DEVELOPMENT OF AUTONOMOUS ROBOTS FOR PRECISE LINE TRACKING TASKS</p>
-    </div>
-    <div>
-        <h3>AERIAL DRONE</h3>
-        <p>ENHANCING AERIAL EFFICIENCY THROUGH INNOVATIVE DRONE SYSTEMS</p>
-    </div>
-    <div>
-        <h3>SOCCER BOT</h3>
-        <p>ADVANCED ROBOTIC CONTROL FOR DYNAMIC AND STRATEGIC GAMEPLAY</p>
-    </div>
+
+    <section class="projects">
+        <h2>Our Focus</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Line Follower Robot</h3>
+                <p>Autonomous robots for precise line tracking.</p>
+            </div>
+
+            <div class="card">
+                <h3>Aerial Drone</h3>
+                <p>Innovative drone systems for aerial efficiency.</p>
+            </div>
+
+            <div class="card">
+                <h3>Soccer Bot</h3>
+                <p>Robotic systems for strategic gameplay.</p>
+            </div>
+
+        </div>
     </section>
-    <section>
-    <form>
-        <label for="name">NAME</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">EMAIL</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="email">PHONE NUMBER</label><br>
-        <input type="tel" name="phone"><br>
-        <label for="message">Message</label><br>
-        <textarea name="message" rows="10" cols="30"></textarea>
-        <button type="submit" class="select">SEND</button>
-    </form>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <input type="tel" placeholder="Phone Number"><br>
+            <textarea placeholder="Your Message"></textarea><br>
+            <button class="btn">Send</button>
+        </form>
     </section>
+
+    <footer>
+        <p>© 2026 Hardware Acceleration Club, KUET</p>
+    </footer>
+
 </body>
 </html>

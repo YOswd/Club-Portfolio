@@ -1,22 +1,73 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  margin: 20px;
+  background: #f5f7fa;
 }
 
-section {
-  margin-bottom: 40px;
-}
-
-.select {
-  background-color: blue;
-  border: none;
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
   color: white;
-  padding: 10px 20px;
-  cursor: pointer;
+  text-align: center;
+  padding: 80px 20px;
 }
 
-.select:hover {
-  background-color: white;
-  color: blue;
-  border: 1px solid blue;
+.hero h1 {
+  font-size: 40px;
+}
+
+/* BUTTON */
+.btn {
+  background: #ff9800;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+form {
+  display: inline-block;
+}
+
+form input, form textarea {
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
