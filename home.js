@@ -8,21 +8,16 @@ document.querySelectorAll("a").forEach(link => {
   });
 });
 
-document.querySelectorAll(".btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    alert("Join us by filling the contact form!");
-  });
-});
-
 const reveals = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", () => {
   reveals.forEach(el => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
       el.classList.add("active");
     }
   });
 });
+
+document.querySelector(".btn").onclick = () => {
+  alert("Join us via contact form!");
+};

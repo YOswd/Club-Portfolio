@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardware Acceleration Club of KUET</title>
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HACK KUET</title>
+  <link rel="stylesheet" href="home.css">
 </head>
-
 <body>
-    <nav>
-        <h2>HACK KUET</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Focus</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+  <h2>HACK KUET</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <header class="hero">
-        <h1>Hardware Acceleration Club</h1>
-        <p>KUET | Hardware & IoT Enthusiasts</p>
-        <button class="btn">Join Us</button>
-    </header>
+<header class="hero">
+  <h1>Hardware Acceleration Club</h1>
+  <p>Innovate. Build. Compete.</p>
+  <button class="btn">Join Us</button>
+</header>
 
-    <section id="about" class="reveal">
-        <h2>About Us</h2>
-        <p>
-            We are a community of KUET students passionate about hardware,
-            embedded systems, and IoT. We build, innovate, and compete.
-        </p>
-    </section>
+<section id="about" class="reveal">
+  <h2>About Us</h2>
+  <p>We are a community of KUET students passionate about robotics, embedded systems, and IoT.</p>
+</section>
 
-    <section id="projects" class="reveal">
-        <h2>Our Focus</h2>
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="grid">
 
-        <div class="card-container">
-            <div class="card">
-                <img src="D:/My Photos/lfr.jpg">
-                <h3>Line Follower Robot</h3>
-                <p>Autonomous precision tracking robot.</p>
-            </div>
+    <div class="card">
+      <img src="D:/My Photos/lfr.jpg">
+      <h3>LFR Robot</h3>
+      <p>Autonomous line follower robot.</p>
+    </div>
 
-            <div class="card">
-                <img src="D:/My Photos/drone.jpg">
-                <h3>Aerial Drone</h3>
-                <p>Advanced aerial system design.</p>
-            </div>
+    <div class="card">
+      <img src="D:/My Photos/drone.jpg">
+      <h3>Drone</h3>
+      <p>Aerial robotics systems.</p>
+    </div>
 
-            <div class="card">
-                <img src="D:/My Photos/soccer.jpg">
-                <h3>Soccer Bot</h3>
-                <p>Strategic robotic gameplay system.</p>
-            </div>
-        </div>
-    </section>
+    <div class="card">
+      <img src="D:/My Photos/soccer.jpg">
+      <h3>Soccer Bot</h3>
+      <p>AI-based robot gameplay.</p>
+    </div>
 
-    <section id="contact" class="reveal">
-        <h2>Contact Us</h2>
+  </div>
+</section>
 
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Phone Number">
-            <textarea placeholder="Your Message"></textarea>
-            <button class="btn">Send</button>
-        </form>
-    </section>
+<section class="reveal">
+  <h2>Achievements</h2>
+  <div class="grid">
+    <div class="card"><h3>1st Place Robotics Fest</h3></div>
+    <div class="card"><h3>National IoT Competition Finalist</h3></div>
+    <div class="card"><h3>Top 10 RoboCup Team</h3></div>
+  </div>
+</section>
 
-    <footer>
-        <p>© 2026 Hardware Acceleration Club, KUET</p>
-    </footer>
+<section id="events" class="reveal">
+  <h2>Events</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="D:/My Photos/workshop.jpg">
+      <h3>Workshop</h3>
+    </div>
+    <div class="card">
+      <img src="D:/My Photos/bitfest.webp">
+      <h3>Competition</h3>
+    </div>
+  </div>
+</section>
 
-    <script src="home.js"></script>
+<section id="gallery" class="reveal">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="D:/My Photos/bitfest.webp">
+    <img src="D:/My Photos/lfr.jpg">
+    <img src="D:/My Photos/drone.jpg">
+  </div>
+</section>
 
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 HACK KUET</p>
+</footer>
+
+<script src="home.js"></script>
 </body>
 </html>
