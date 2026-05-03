@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hardware Acceleration Club of KUET</title>
     <link rel="stylesheet" href="home.css">
-    <script src="js/script.js"></script>
 </head>
+
 <body>
+    <nav>
+        <h2>HAC KUET</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Focus</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header class="hero">
         <h1>Hardware Acceleration Club</h1>
         <p>KUET | The hub for hardware & IoT enthusiasts</p>
         <button class="btn">Join Us</button>
     </header>
 
-    <section class="about">
+    <section id="about">
         <h2>About Us</h2>
         <p>
             We are a community of KUET students passionate about hardware,
@@ -23,35 +32,33 @@
         </p>
     </section>
 
-    <section class="projects">
+    <section id="projects">
         <h2>Our Focus</h2>
 
         <div class="card-container">
-
             <div class="card">
                 <h3>Line Follower Robot</h3>
-                <p>Autonomous robots for precise line tracking.</p>
+                <p>Autonomous robots for precise tracking.</p>
             </div>
 
             <div class="card">
                 <h3>Aerial Drone</h3>
-                <p>Innovative drone systems for aerial efficiency.</p>
+                <p>Advanced drone systems for aerial efficiency.</p>
             </div>
 
             <div class="card">
                 <h3>Soccer Bot</h3>
-                <p>Robotic systems for strategic gameplay.</p>
+                <p>Robotics for strategic gameplay.</p>
             </div>
-
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
 
         <form>
-            <input type="text" placeholder="Your Name"><br>
-            <input type="email" placeholder="Your Email"><br>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
             <input type="tel" placeholder="Phone Number"><br>
             <textarea placeholder="Your Message"></textarea><br>
             <button class="btn">Send</button>
@@ -61,6 +68,8 @@
     <footer>
         <p>© 2026 Hardware Acceleration Club, KUET</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
