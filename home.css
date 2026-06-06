@@ -4,13 +4,18 @@ body {
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  background: rgba(0,0,0,0.9);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(0,0,0,0.9);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
 }
 
 nav ul {
@@ -117,4 +122,46 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.page-hero {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.project-card img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.project-info {
+    text-align: left;
+}
+
+.project-info ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card img {
+        width: 100%;
+    }
 }
