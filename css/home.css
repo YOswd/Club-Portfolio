@@ -30,14 +30,68 @@ nav a {
 }
 
 .hero {
-  height: 100vh;
-  background: url('images/bg.jpg') center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+
+    background: linear-gradient(
+        135deg,
+        #0b1220,
+        #111a2e
+    );
+}
+
+.hero-content {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+
+    color: #b0b8c5;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 400px;
+    max-width: 100%;
+
+    animation: float 4s ease-in-out infinite;
 }
 
 .hero::before {
