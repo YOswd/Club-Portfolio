@@ -1,0 +1,11 @@
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+}
