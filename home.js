@@ -55,8 +55,8 @@ if (joinBtn) {
 const shareBtn = document.querySelector(".share-btn");
 const socialIcons = document.querySelector(".social-icons");
 
-shareBtn.addEventListener("click", () => {
-
-    socialIcons.classList.toggle("show");
-
-});
+if (shareBtn && socialIcons) {
+    shareBtn.addEventListener("click", () => {
+        socialIcons.classList.toggle("show");
+    });
+}
