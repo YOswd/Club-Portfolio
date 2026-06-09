@@ -1,0 +1,73 @@
+.stat-box {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+
+    transition: .3s;
+}
+
+.stat-box:hover {
+
+    transform: translateY(-8px);
+}
+
+.stat-box h1 {
+
+    color: #ff9800;
+
+    font-size: 3rem;
+}
+
+.achievement-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.achievement-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+
+    transition: .3s;
+}
+
+.achievement-card:hover {
+
+    transform: translateY(-10px);
+}
+
+.achievement-card h3 {
+
+    color: #ff9800;
+
+    margin-bottom: 10px;
+}
+
+.achievement-card span {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}

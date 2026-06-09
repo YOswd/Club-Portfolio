@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.social-links {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.social-links a {
+
+    color: #0f172a;
+
+    font-size: 28px;
+
+    transition: .3s;
+}
+
+.social-links a:hover {
+
+    color: #ff9800;
+
+    transform: translateY(-3px);
+}
+
+.contact-form {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.contact-form h2 {
+
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    margin: 10px 0;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+
+    min-height: 150px;
+}
+
+.social-share {
+    position: relative;
+}
+
+.share-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.social-icons {
+    position: absolute;
+
+    top: 45px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 9999;
+}
+
+.social-icons.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #ff9800;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.join-section {
+
+    background: #0f172a;
+
+    color: white;
+
+    padding: 100px 20px;
+}
+
+.join-section p {
+
+    margin: 20px 0;
+}

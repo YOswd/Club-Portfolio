@@ -50,3 +50,10 @@ section {
     color: #666;
     margin-bottom: 15px;
 }
+
+.advisor {
+
+    max-width: 350px;
+
+    margin: auto;
+}
