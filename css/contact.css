@@ -1,15 +1,10 @@
 .contact-container {
 
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 50px;
-
     align-items: start;
 }
 
@@ -31,19 +26,14 @@
 .contact-item {
 
     display: flex;
-
     align-items: center;
-
     gap: 15px;
-
     margin-bottom: 20px;
-
     font-size: 18px;
 }
 
 .contact-item i {
 
     color: #ff9800;
-
     font-size: 22px;
 }

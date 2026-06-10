@@ -26,9 +26,7 @@ section {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-
     box-shadow: 0 5px 15px rgba(0,0,0,.1);
-
     transition: 0.3s;
 }
 
@@ -54,6 +52,5 @@ section {
 .advisor {
 
     max-width: 350px;
-
     margin: auto;
 }

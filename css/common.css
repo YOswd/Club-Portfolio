@@ -16,16 +16,12 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 15px 40px;
-
     background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(10px);
-
     z-index: 1000;
 }
 
@@ -63,36 +59,28 @@ nav a:hover {
 .social-links {
 
     margin-top: 30px;
-
     display: flex;
-
     gap: 20px;
 }
 
 .social-links a {
 
     color: #0f172a;
-
     font-size: 28px;
-
     transition: .3s;
 }
 
 .social-links a:hover {
 
     color: #ff9800;
-
     transform: translateY(-3px);
 }
 
 .contact-form {
 
     background: white;
-
     padding: 30px;
-
     border-radius: 20px;
-
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
 }
 
@@ -104,7 +92,6 @@ nav a:hover {
 .contact-form form {
 
     display: flex;
-
     flex-direction: column;
 }
 
@@ -112,13 +99,9 @@ nav a:hover {
 .contact-form textarea {
 
     width: 100%;
-
     margin: 10px 0;
-
     padding: 14px;
-
     border: 1px solid #ddd;
-
     border-radius: 10px;
 }
 
@@ -141,20 +124,14 @@ nav a:hover {
 
 .social-icons {
     position: absolute;
-
     top: 45px;
     right: 0;
-
     display: flex;
     flex-direction: column;
-
     gap: 12px;
-
     opacity: 0;
     visibility: hidden;
-
     transition: 0.3s;
-
     z-index: 9999;
 }
 
@@ -166,19 +143,13 @@ nav a:hover {
 .social-icons a {
     width: 40px;
     height: 40px;
-
     border-radius: 50%;
-
     background: #ff9800;
-
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-decoration: none;
-
     transition: 0.3s;
 }
 
@@ -189,13 +160,93 @@ nav a:hover {
 .join-section {
 
     background: #0f172a;
-
     color: white;
-
     padding: 100px 20px;
 }
 
 .join-section p {
 
     margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5 {
+        grid-column: auto;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline::before {
+
+    left: 20px;
+}
+
+.timeline-item {
+
+    width: 100%;
+    left: 0 !important;
+    padding-left: 60px;
+    text-align: left !important;
+}
+
+.timeline-item::before {
+
+    left: 10px !important;
+}
+
+#events .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .title-area h2 {
+        font-size: 2rem;
+    }
 }
