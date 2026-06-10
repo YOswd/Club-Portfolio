@@ -249,4 +249,13 @@ nav a:hover {
     .title-area h2 {
         font-size: 2rem;
     }
+
+    .project-detail-card {
+        grid-template-columns: 1fr; /* Stacks image above text on small screens */
+        gap: 0;
+    }
+    
+    .project-detail-card img {
+        height: 250px;
+    }
 }
