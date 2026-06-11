@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HACK_KUET.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+
+    
+    <link rel="stylesheet" href="~/css/common.css" />
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
+    <link rel="stylesheet" href="~/css/achievements.css" />
+    <link rel="stylesheet" href="~/css/contact.css" />
+    <link rel="stylesheet" href="~/css/events.css" />
+    <link rel="stylesheet" href="~/css/gallery.css" />
+    <link rel="stylesheet" href="~/css/members.css" />
+    <link rel="stylesheet" href="~/css/projects.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='<%= ResolveUrl("~/favicon.ico") %>' rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <nav>
+
+    <div class="logo">
+        <img src='<%= ResolveUrl("~/images/HACK.jpg") %>' alt="HACK KUET">
+    </div>
+
+    <ul class="nav-links">
+
+    <li><a runat="server" href="~/pages/Default.aspx">Home</a></li>
+    <li><a runat="server" href="~/pages/About.aspx">About</a></li>
+    <li><a runat="server" href="~/pages/Members.aspx">Members</a></li>
+    <li><a runat="server" href="~/pages/Projects.aspx">Projects</a></li>
+    <li><a runat="server" href="~/pages/Events.aspx">Events</a></li>
+    <li><a runat="server" href="~/pages/Gallery.aspx">Gallery</a></li>
+    <li><a runat="server" href="~/pages/Achievements.aspx">Achievements</a></li>
+    <li><a runat="server" href="~/pages/Contact.aspx">Contact</a></li>
+
+    </ul>
+
+    <div class="social-share">
+
+        <button class="share-btn">
+            <i class="fas fa-share-alt"></i>
+        </button>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </div>
+
+</nav>
+        <div class="body-content">
+             <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <script src='<%= ResolveUrl("~/Scripts/bootstrap.js") %>'></script>
+        <footer>
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <img src='<%= ResolveUrl("~/images/HACK.jpg") %>' alt="HACK KUET Logo" class="footer-logo">
+
+            <h3>HACK KUET</h3>
+
+            <p>
+                Hardware Acceleration Club of KUET.
+                A platform for robotics, embedded systems,
+                IoT and innovative engineering projects.
+            </p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href='<%= ResolveUrl("~/pages/Default.aspx") %>'>Home</a></li>
+                <li><a href='<%= ResolveUrl("~/pages/About.aspx") %>'>About Us</a></li>
+                <li><a href='<%= ResolveUrl("~/pages/Members.aspx") %>'>Members</a></li>
+                <li><a href='<%= ResolveUrl("~/pages/Projects.aspx") %>'>Projects</a></li>
+                <li><a href='<%= ResolveUrl("~/pages/Events.aspx") %>'>Events</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Resources</h3>
+
+            <ul>
+                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Competitions</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Achievements</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Contact</h3>
+
+            <p>Khulna University of Engineering & Technology</p>
+            <p>Khulna, Bangladesh</p>
+            <p>hack@kuet.ac.bd</p>
+            <p>+8801XXXXXXXXX</p>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© <%: DateTime.Now.Year %> HACK KUET. All Rights Reserved.</p>
+    </div>
+
+</footer>
+    </form>
+</body>
+</html>

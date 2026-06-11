@@ -1,0 +1,33 @@
+﻿INSERT INTO Members (Name, Position, ImageUrl) VALUES ('FAYSAL MAHMUD', 'PRESIDENT(TECHNICAL AFFAIRS)', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('AMIT KAIRY', 'PRESIDENT(ADMINISTRATION)', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MAHMUDUL ISLAM SHAWCHA', 'VICE PRESIDENT', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('HAFSA TAZIRAN', 'TREASURER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MD. EBRAHIM SIDDIK ZAIN', 'WORKSHOP MANAGER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MOFAZZAL HOSEN', 'GENERAL SECRETARY', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('RAUFUN AHSAN', 'ORGANIZING SECRETARY', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('SWAPNIL KUNDU', 'PUBLICATION SECRETARY', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('TAWHIDUL HASAN', 'EDITORIAL MANAGER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('SUMAIYA RAHMAN', 'ASSISTANT TREASURER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('TAHMID HOSSAIN CHOWDHURY MAHIN', 'ASSISTANT WORKSHOP MANAGER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('SALEH SADID MIR', 'ASSISTANT WORKSHOP MANAGER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('ISAAC ANEEK SARKAR', 'ASSISTANT WORKSHOP MANAGER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('K.I. MAHI', 'ASSISTANT GENERAL SECRETARY', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('ABDULLAH AL NOMAN', 'ASSISTANT GENERAL SECRETARY', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MUSTAFIZUR RAHMAN', 'ASSISTANT PUBLICATION SECRETARY', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('SHORMI GHOSH', 'ASSISTANT ORGANIZING SECRETARY', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MD KHORSHED SHEIKH', 'ASSISTANT EDITORIAL MANAGER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('NURUL ABSAR SHADIK', 'ASSISTANT EDITORIAL MANAGER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MD R FARHAD', 'PERFORMER ANALYZER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('FAYSAL MAHMUD', 'PERFORMER ANALYZER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('FAYSAL MAHMUD', 'PERFORMER ANALYZER', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('ABU SUFIAN', 'SENIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('SHOMIK SHAHRIAR', 'SENIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('AAVAS ROY', 'SENIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('ALIF AL AHAD', 'SENIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MARUF AHMED', 'JUNIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('MAHIR ABSAR', 'JUNIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('ABID INQIAD', 'JUNIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('SANJIDUR RAHMAN', 'JUNIOR EXECUTIVE', '/images/member.jpg');
+INSERT INTO Members (Name, Position, ImageUrl) VALUES ('JUBAYER HOSSAIN', 'JUNIOR EXECUTIVE', '/images/member.jpg'),
+('MOHOSIN ALAM', 'JUNIOR EXECUTIVE', '/images/member.jpg'),
+('ARNOB DAM', 'JUNIOR EXECUTIVE', '/images/member.jpg');
