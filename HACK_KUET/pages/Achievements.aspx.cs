@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HACK_KUET.pages
+namespace HACK_KUET
 {
     public partial class Achievements : System.Web.UI.Page
     {

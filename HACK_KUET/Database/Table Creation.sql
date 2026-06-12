@@ -1,0 +1,7 @@
+﻿CREATE TABLE Members
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100),
+    Position NVARCHAR(100),
+    ImageUrl NVARCHAR(255)
+);

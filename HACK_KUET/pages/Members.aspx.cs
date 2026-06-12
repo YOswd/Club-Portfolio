@@ -2,7 +2,7 @@
 using System.Configuration;
 using System.Data.SqlClient;
 
-namespace HACK_KUET.pages
+namespace HACK_KUET
 {
     public partial class Members : System.Web.UI.Page
     {

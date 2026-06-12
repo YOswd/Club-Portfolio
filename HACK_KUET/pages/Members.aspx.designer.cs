@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HACK_KUET.pages
+namespace HACK_KUET
 {
 
 

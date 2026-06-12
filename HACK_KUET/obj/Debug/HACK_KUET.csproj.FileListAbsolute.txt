@@ -70,3 +70,5 @@ C:\Users\Lenovo\source\repos\HACK_KUET\HACK_KUET\obj\Debug\HACK_KUET.csproj.Core
 C:\Users\Lenovo\source\repos\HACK_KUET\HACK_KUET\obj\Debug\HACK_KUET.csproj.Up2Date
 C:\Users\Lenovo\source\repos\HACK_KUET\HACK_KUET\obj\Debug\HACK_KUET.dll
 C:\Users\Lenovo\source\repos\HACK_KUET\HACK_KUET\obj\Debug\HACK_KUET.pdb
+C:\Users\Lenovo\source\repos\HACK_KUET\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.dll
+C:\Users\Lenovo\source\repos\HACK_KUET\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.pdb

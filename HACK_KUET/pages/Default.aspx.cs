@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HACK_KUET
 {
-    public partial class Default : Page
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
