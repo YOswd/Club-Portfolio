@@ -17,7 +17,7 @@ namespace HACK_KUET
         private void LoadMembers()
         {
             string connStr =
-                ConfigurationManager.ConnectionStrings["ClubDB"].ConnectionString;
+                ConfigurationManager.ConnectionStrings["HACK_KUET_DB"].ConnectionString;
 
             using (SqlConnection con = new SqlConnection(connStr))
             {

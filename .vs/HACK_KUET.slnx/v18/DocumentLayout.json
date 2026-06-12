@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\admin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\admin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\pages\\adminhome.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminhome.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\pages\\adminhome.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminhome.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\pages\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\admin.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\admin.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\pages\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\hack_kuet\\pages\\adminmessages.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminmessages.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\pages\\adminmessages.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminmessages.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\hack_kuet\\pages\\adminmessages.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminmessages.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\pages\\adminlogout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminlogout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\pages\\adminevents.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminevents.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\hack_kuet\\pages\\adminlogout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminlogout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\hack_kuet\\pages\\adminlogout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminlogout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\hack_kuet\\pages\\adminmessages.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminmessages.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\hack_kuet\\pages\\adminlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\pages\\adminlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|c:\\users\\lenovo\\html-css\\clubportfolio\\hack_kuet\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8EBF0C49-E84F-4096-9218-D0B2A7060DEF}|HACK_KUET\\HACK_KUET.csproj|solutionrelative:hack_kuet\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +58,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminHome.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminHome.aspx.cs",
+              "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminHome.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminHome.aspx.cs",
+              "RelativeToolTip": "HACK_KUET\\pages\\AdminHome.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T15:20:22.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminHome.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminHome.aspx",
+              "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminHome.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminHome.aspx",
+              "RelativeToolTip": "HACK_KUET\\pages\\AdminHome.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T15:19:36.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\Default.aspx",
+              "RelativeDocumentMoniker": "HACK_KUET\\pages\\Default.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\Default.aspx",
+              "RelativeToolTip": "HACK_KUET\\pages\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T15:11:55.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Admin.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\Admin.Master.cs",
+              "RelativeDocumentMoniker": "HACK_KUET\\Admin.Master.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\Admin.Master.cs",
+              "RelativeToolTip": "HACK_KUET\\Admin.Master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T14:59:18.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AdminLogout.aspx",
               "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminLogout.aspx",
               "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminLogout.aspx",
@@ -46,23 +122,12 @@
               "RelativeToolTip": "HACK_KUET\\pages\\AdminLogout.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T11:51:48.209Z"
+              "WhenOpened": "2026-06-12T14:57:42.469Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AdminLogin.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminLogin.aspx.cs",
-              "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminLogin.aspx.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminLogin.aspx.cs",
-              "RelativeToolTip": "HACK_KUET\\pages\\AdminLogin.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T08:06:02.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "AdminLogin.aspx",
               "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminLogin.aspx",
               "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminLogin.aspx",
@@ -70,12 +135,38 @@
               "RelativeToolTip": "HACK_KUET\\pages\\AdminLogin.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T08:03:23.197Z",
+              "WhenOpened": "2026-06-12T14:57:31.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Admin.Master",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\Admin.Master",
+              "RelativeDocumentMoniker": "HACK_KUET\\Admin.Master",
+              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\Admin.Master",
+              "RelativeToolTip": "HACK_KUET\\Admin.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T14:54:36.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminEvents.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminEvents.aspx",
+              "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminEvents.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminEvents.aspx",
+              "RelativeToolTip": "HACK_KUET\\pages\\AdminEvents.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-12T14:50:41.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AdminMessages.aspx",
               "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminMessages.aspx",
               "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminMessages.aspx",
@@ -83,23 +174,38 @@
               "RelativeToolTip": "HACK_KUET\\pages\\AdminMessages.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-12T06:36:51.732Z"
+              "WhenOpened": "2026-06-12T14:09:04.416Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\Web.config",
+              "RelativeDocumentMoniker": "HACK_KUET\\Web.config",
+              "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\Web.config",
+              "RelativeToolTip": "HACK_KUET\\Web.config",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-12T13:20:30.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AdminMessages.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminMessages.aspx.cs",
               "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminMessages.aspx.cs",
               "ToolTip": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminMessages.aspx.cs",
               "RelativeToolTip": "HACK_KUET\\pages\\AdminMessages.aspx.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwC8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T11:31:03.063Z"
+              "WhenOpened": "2026-06-12T11:31:03.063Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "AdminLogout.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\HTML-CSS\\ClubPortfolio\\HACK_KUET\\pages\\AdminLogout.aspx.cs",
               "RelativeDocumentMoniker": "HACK_KUET\\pages\\AdminLogout.aspx.cs",
@@ -107,7 +213,8 @@
               "RelativeToolTip": "HACK_KUET\\pages\\AdminLogout.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T11:53:59.011Z"
+              "WhenOpened": "2026-06-12T11:53:59.011Z",
+              "EditorCaption": ""
             }
           ]
         }

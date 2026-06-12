@@ -1,40 +1,86 @@
-﻿<%@ Page Title="Admin Messages" Language="C#" MasterPageFile="~/Site.Master"
+﻿<%@ Page Title="Admin Dashboard" Language="C#" MasterPageFile="~/Admin.Master"
 AutoEventWireup="true" CodeBehind="AdminMessages.aspx.cs"
 Inherits="HACK_KUET.AdminMessages" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+
     <style>
-        .admin-hero {
-            background: #0f172a;
+        body {
+            background: #f4f6f9;
+        }
+
+        .admin-header {
+    background: #0f172a;
+    color: white;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+}
+
+        .admin-header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .logout-btn {
+            background: #ef4444;
             color: white;
-            padding: 60px 20px;
-            text-align: center;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        .admin-container {
-            padding: 40px;
+        .dashboard {
+            padding: 30px 40px;
         }
 
-        .stats {
+        .cards {
             display: flex;
             gap: 20px;
-            justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .card {
+            flex: 1;
             background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            min-width: 150px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             text-align: center;
         }
+
+        .card h2 {
+            margin: 0;
+            font-size: 28px;
+            color: #0f172a;
+        }
+
+        .card p {
+            margin: 5px 0 0;
+            color: gray;
+        }
+
+        .table-box {
+    background: white;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
 
         .grid {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
         }
 
         .grid th {
@@ -45,54 +91,116 @@ Inherits="HACK_KUET.AdminMessages" %>
 
         .grid td {
             padding: 12px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #eee;
         }
 
-        .delete-btn {
-            background: red;
-            color: white;
-            border: none;
-            padding: 6px 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+       .grid {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.delete-btn {
+    width: auto;
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 11px;
+    white-space: nowrap;
+}
     </style>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- Hero -->
-    <section class="admin-hero">
-        <h1>Admin Panel</h1>
-        <p>Manage Contact Messages</p>
-    </section>
+    <!-- HEADER -->
+    <div class="admin-header">
 
-    <div class="admin-container">
+    <h1>Admin Messages</h1>
 
-        <!-- Stats -->
-        <div class="stats">
+    <div class="header-right">
+        <span>Total Messages: <asp:Label ID="lblCountTop" runat="server" Text="0" /></span>
+
+        <asp:HyperLink ID="logoutLink" runat="server"
+            NavigateUrl="~/pages/AdminLogout.aspx"
+            CssClass="logout-btn">
+            Logout
+        </asp:HyperLink>
+    </div>
+
+</div>
+
+    <div class="dashboard">
+
+        <!-- CARDS -->
+        <div class="cards">
+
             <div class="card">
-                <h3>Total Messages</h3>
-                <asp:Label ID="lblCount" runat="server" Text="0"></asp:Label>
+                <h2><asp:Label ID="lblCount" runat="server" Text="0" /></h2>
+                <p>Total Messages</p>
             </div>
+
         </div>
 
-        <!-- Messages Table -->
-        <asp:GridView ID="GridViewMessages" runat="server"
-            AutoGenerateColumns="False" CssClass="grid">
+        <!-- TABLE -->
+        <div class="table-box">
 
-            <Columns>
+            <asp:GridView ID="GridViewMessages" runat="server"
+    AutoGenerateColumns="False"
+    CssClass="grid"
+    DataKeyNames="Id"
+    OnRowCommand="GridViewMessages_RowCommand">
 
-                <asp:BoundField DataField="Name" HeaderText="Name" />
-                <asp:BoundField DataField="Email" HeaderText="Email" />
-                <asp:BoundField DataField="Message" HeaderText="Message" />
-                <asp:BoundField DataField="CreatedAt" HeaderText="Date" />
+    <Columns>
 
-            </Columns>
+        <asp:BoundField DataField="Id" HeaderText="ID">
+            <ItemStyle Width="40px" />
+        </asp:BoundField>
 
-        </asp:GridView>
+        <asp:BoundField DataField="Name" HeaderText="Name">
+            <ItemStyle Width="120px" />
+        </asp:BoundField>
 
-        <a href="AdminLogout.aspx" class="logout-btn"> Logout</a>
+        <asp:BoundField DataField="Email" HeaderText="Email">
+            <ItemStyle Width="180px" />
+        </asp:BoundField>
+
+        <asp:BoundField DataField="Subject" HeaderText="Subject">
+            <ItemStyle Width="150px" />
+        </asp:BoundField>
+
+        <asp:TemplateField HeaderText="Message">
+    <ItemStyle Width="400px" />
+
+    <ItemTemplate>
+        <div style="
+            max-width: 400px;
+            white-space: normal;
+            word-break: break-word;">
+            <%# Eval("Message") %>
+        </div>
+    </ItemTemplate>
+</asp:TemplateField>
+
+        <asp:TemplateField HeaderText="">
+    <ItemStyle Width="60px" HorizontalAlign="Center" />
+    <HeaderStyle Width="60px" />
+
+    <ItemTemplate>
+        <asp:Button ID="btnDelete" runat="server"
+            Text="Delete"
+            CommandName="DeleteMessage"
+            CommandArgument='<%# Eval("Id") %>'
+            CssClass="delete-btn"
+            OnClientClick="return confirm('Delete this message?');" />
+    </ItemTemplate>
+</asp:TemplateField>
+
+    </Columns>
+
+</asp:GridView>
+
+        </div>
+
     </div>
 
 </asp:Content>

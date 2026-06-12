@@ -11,43 +11,34 @@ namespace HACK_KUET
 {
 
 
-    public partial class AdminMessages
+    public partial class AdminHome
     {
 
         /// <summary>
-        /// lblCountTop control.
+        /// lblMessages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCountTop;
+        protected global::System.Web.UI.WebControls.Label lblMessages;
 
         /// <summary>
-        /// logoutLink control.
+        /// lblEvents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink logoutLink;
+        protected global::System.Web.UI.WebControls.Label lblEvents;
 
         /// <summary>
-        /// lblCount control.
+        /// lblMembers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCount;
-
-        /// <summary>
-        /// GridViewMessages control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewMessages;
+        protected global::System.Web.UI.WebControls.Label lblMembers;
     }
 }

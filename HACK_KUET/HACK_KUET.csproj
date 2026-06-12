@@ -99,9 +99,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\HACK_KUET_DB.mdf" />
+    <Content Include="App_Data\HACK_KUET_DB_log.ldf">
+      <DependentUpon>HACK_KUET_DB.mdf</DependentUpon>
+    </Content>
     <Content Include="images\bitfest1.jpg" />
     <Content Include="pages\About.aspx" />
     <Content Include="pages\Achievements.aspx" />
+    <Content Include="pages\AdminEvents.aspx" />
+    <Content Include="pages\AdminHome.aspx" />
     <Content Include="pages\AdminLogin.aspx" />
     <Content Include="pages\AdminLogout.aspx" />
     <Content Include="pages\AdminMessages.aspx" />
@@ -214,6 +220,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Admin.Master" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\home.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
@@ -249,6 +256,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="pages\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -264,6 +278,20 @@
     </Compile>
     <Compile Include="pages\Achievements.aspx.designer.cs">
       <DependentUpon>Achievements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminEvents.aspx.cs">
+      <DependentUpon>AdminEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminEvents.aspx.designer.cs">
+      <DependentUpon>AdminEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
@@ -354,9 +382,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />

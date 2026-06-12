@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="HACK_KUET.Admin" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Admin Panel</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6f9;
+        }
+
+        .admin-header {
+            background: #0f172a;
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .logout {
+            color: white;
+            text-decoration: none;
+            background: red;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #1e293b;
+}
+
+/* LOGOUT */
+.sidebar .logout {
+    margin-top: 20px;
+    background: #ef4444;
+}
+
+/* MAIN AREA */
+.main-content {
+    flex: 1;
+    background: #f4f6f9;
+}
+
+/* TOP BAR */
+.topbar {
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* PAGE CONTENT */
+.content {
+    padding: 20px;
+}
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #0f172a;
+}
+
+.card p {
+    margin: 10px 0 0;
+    color: gray;
+}
+    </style>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+
+<body>
+<form id="form1" runat="server">
+
+<div class="admin-wrapper">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>HACK KUET</h2>
+        <a href="AdminHome.aspx">🏠 Home</a>
+        <a href="AdminMessages.aspx">📩 Messages</a>
+        <a href="AdminEvents.aspx">📅 Events</a>
+        <a href="AdminMembers.aspx">👥 Members</a>
+        <hr />
+
+        <a href="AdminLogout.aspx" class="logout">🚪 Logout</a>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <div class="topbar">
+            <h3>Admin Panel</h3>
+        </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+    </div>
+
+</div>
+
+</form>
+</body>
+</html>
