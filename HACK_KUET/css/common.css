@@ -119,7 +119,38 @@ nav a:hover {
 
 .social-share {
     position: relative;
-    z-index: 999999;
+    display: inline-block;
+}
+
+.social-icons {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(15, 23, 42, 0.95);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.2s ease;
+    z-index: 9999;
+}
+
+    .social-icons.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+.share-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .share-btn {
@@ -135,57 +166,6 @@ nav a:hover {
     .share-btn:hover {
         opacity: 1;
     }
-
-.social-icons {
-    position: absolute;
-    top: 45px;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.25s ease;
-    z-index: 9999;
-}
-
-    .social-icons.show {
-        opacity: 1 !important;
-        visibility: visible !important;
-        transform: translateY(0) !important;
-    }
-
-/* SHOW ON HOVER */
-.social-share:hover .social-icons {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-    .social-icons a {
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        background: #ff9800;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        opacity: 0.75;
-        font-size: 14px;
-        transition: 0.3s;
-    }
-
-        .social-icons a i {
-            font-weight: 300;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.1);
-            opacity: 1;
-        }
 
 .join-section {
 

@@ -27,6 +27,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='<%= ResolveUrl("~/favicon.ico") %>' rel="shortcut icon" type="image/x-icon" />
 </head>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const shareBtn = document.querySelector(".share-btn");
+    const socialIcons = document.querySelector(".social-icons");
+
+    console.log("shareBtn:", shareBtn);
+    console.log("socialIcons:", socialIcons);
+
+    if (!shareBtn || !socialIcons) return;
+
+    shareBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        socialIcons.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function () {
+        socialIcons.classList.remove("show");
+    });
+
+});
+    </script>
 <body>
     <form runat="server">
         <asp:ScriptManager runat="server">
@@ -68,17 +90,15 @@
     </ul>
 
     <div class="social-share">
+    <button type="button" class="share-btn">
+        <i class="fas fa-share-alt"></i>
+    </button>
 
-        <button type="button" class="share-btn">
-            <i class="fas fa-share-alt"></i>
-        </button>
-
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/1Redgdfcbi/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@hack-hardwareaccelerationc9241"><i class="fab fa-youtube"></i></a>
     </div>
+</div>
 
 </nav>
         <div class="body-content">
@@ -142,8 +162,8 @@
             <p>+8801XXXXXXXXX</p>
 
             <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/share/1Redgdfcbi/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@hack-hardwareaccelerationc9241"><i class="fab fa-youtube"></i></a>
             </div>
 
         </div>

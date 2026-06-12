@@ -52,7 +52,7 @@
             <div class="short-info">
                 <h3>LINE FOLLOWER ROBOT</h3>
                 <p>Autonomous robot using IR sensors and control logic.</p>
-                <button class="toggle-btn">SEE DETAILS</button>
+                <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
 
             <div class="img-wrapper">
@@ -76,7 +76,7 @@
                     <li>Champion Robo Challenge</li>
                 </ul>
 
-                <button class="toggle-btn">SEE LESS</button>
+                <button type="button" class="btn toggle-btn close-btn">SEE LESS</button>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
             <div class="short-info">
                 <h3>AUTONOMOUS DRONE</h3>
                 <p>GPS-based autonomous aerial system.</p>
-                <button class="toggle-btn">SEE DETAILS</button>
+                <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
 
             <div class="img-wrapper">
@@ -113,7 +113,7 @@
                     <li>Top 5 UAV Contest</li>
                 </ul>
 
-                <button class="toggle-btn">SEE LESS</button>
+                <button type="button" class="btn toggle-btn close-btn">SEE LESS</button>
             </div>
         </div>
     </div>
@@ -125,7 +125,7 @@
             <div class="short-info">
                 <h3>AUTONOMOUS DRONE</h3>
                 <p>GPS-based autonomous aerial system.</p>
-                <button class="toggle-btn">SEE DETAILS</button>
+                <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
 
             <div class="img-wrapper">
@@ -149,7 +149,7 @@
                     <li>Top 5 UAV Contest</li>
                 </ul>
 
-                <button class="toggle-btn">SEE LESS</button>
+                <button type="button" class="btn toggle-btn close-btn">SEE LESS</button>
             </div>
         </div>
     </div>
@@ -161,7 +161,7 @@
             <div class="short-info">
                 <h3>AUTONOMOUS DRONE</h3>
                 <p>GPS-based autonomous aerial system.</p>
-                <button class="toggle-btn">SEE DETAILS</button>
+                <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
 
             <div class="img-wrapper">
@@ -185,7 +185,7 @@
                     <li>Top 5 UAV Contest</li>
                 </ul>
 
-                <button class="toggle-btn">SEE LESS</button>
+                <button type="button" class="btn toggle-btn close-btn">SEE LESS</button>
             </div>
         </div>
     </div>
@@ -196,7 +196,7 @@
             <div class="short-info">
                 <h3>AUTONOMOUS DRONE</h3>
                 <p>GPS-based autonomous aerial system.</p>
-                <button class="toggle-btn">SEE DETAILS</button>
+                <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
 
             <div class="img-wrapper">
@@ -220,7 +220,7 @@
                     <li>Top 5 UAV Contest</li>
                 </ul>
 
-                <button class="toggle-btn">SEE LESS</button>
+                <button type="button" class="btn toggle-btn close-btn">SEE LESS</button>
             </div>
         </div>
     </div>
@@ -302,26 +302,30 @@
             and robotics projects with fellow enthusiasts.
         </p>
 
-        <a href="contact.html">
-            <button class="btn">Join Us</button>
-        </a>
+        <button type="button" class="btn" onclick="window.location.href='/pages/Contact.aspx'">
+            Join Us
+        </button>
 
     </section>
     <script>
-document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
 
-    const buttons = document.querySelectorAll(".toggle-btn");
+            // ONLY open buttons
+            document.querySelectorAll(".open-btn").forEach(btn => {
+                btn.addEventListener("click", function () {
+                    const card = this.closest(".project-detail-card");
+                    if (card) card.classList.add("active");
+                });
+            });
 
-    buttons.forEach(btn => {
-        btn.addEventListener("click", function () {
-
-            const card = this.closest(".project-detail-card");
-
-            card.classList.toggle("active");
+            // ONLY close buttons
+            document.querySelectorAll(".close-btn").forEach(btn => {
+                btn.addEventListener("click", function () {
+                    const card = this.closest(".project-detail-card");
+                    if (card) card.classList.remove("active");
+                });
+            });
 
         });
-    });
-
-});
     </script>
 </asp:Content>

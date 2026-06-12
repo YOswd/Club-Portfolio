@@ -46,6 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
         socialIcons.classList.toggle("show");
     });
 
+    document.addEventListener("click", function () {
+        socialIcons.classList.remove("show");
+    });
+
 });
 
 document.querySelectorAll(".toggle-btn").forEach(btn => {
