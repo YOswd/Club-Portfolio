@@ -102,6 +102,9 @@
     <Content Include="images\bitfest1.jpg" />
     <Content Include="pages\About.aspx" />
     <Content Include="pages\Achievements.aspx" />
+    <Content Include="pages\AdminLogin.aspx" />
+    <Content Include="pages\AdminLogout.aspx" />
+    <Content Include="pages\AdminMessages.aspx" />
     <Content Include="pages\Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -261,6 +264,27 @@
     </Compile>
     <Compile Include="pages\Achievements.aspx.designer.cs">
       <DependentUpon>Achievements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminLogout.aspx.cs">
+      <DependentUpon>AdminLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminLogout.aspx.designer.cs">
+      <DependentUpon>AdminLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminMessages.aspx.cs">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminMessages.aspx.designer.cs">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

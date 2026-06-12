@@ -51,25 +51,21 @@
 
         <div class="contact-form">
 
-            <h2>Send Message</h2>
+    <h2>Send Message</h2>
 
-            <form>
+    <asp:TextBox ID="txtName" runat="server" placeholder="Full Name" CssClass="input"></asp:TextBox>
 
-                <input type="text" placeholder="Full Name" required>
+    <asp:TextBox ID="txtEmail" runat="server" placeholder="Email Address" CssClass="input"></asp:TextBox>
 
-                <input type="email" placeholder="Email Address" required>
+    <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject" CssClass="input"></asp:TextBox>
 
-                <input type="text" placeholder="Subject">
+    <asp:TextBox ID="txtMessage" runat="server" TextMode="MultiLine"
+        placeholder="Write your message here..." CssClass="input"></asp:TextBox>
 
-                <textarea
-                placeholder="Write your message here..."
-                required></textarea>
+    <asp:Button ID="btnSend" runat="server" Text="Send Message"
+        CssClass="btn" OnClick="btnSend_Click" />
 
-                <button class="btn">Send Message</button>
-
-            </form>
-
-        </div>
+      </div>
 
     </div>
 

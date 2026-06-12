@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace HACK_KUET
+{
+    public partial class AdminLogout : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Session.Clear();      // remove all session data
+            Session.Abandon();    // destroy session
+
+            Response.Redirect("AdminLogin.aspx"); // go back to login
+        }
+    }
+}
