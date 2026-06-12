@@ -307,4 +307,21 @@
         </a>
 
     </section>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const buttons = document.querySelectorAll(".toggle-btn");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", function () {
+
+            const card = this.closest(".project-detail-card");
+
+            card.classList.toggle("active");
+
+        });
+    });
+
+});
+    </script>
 </asp:Content>

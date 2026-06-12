@@ -5,7 +5,7 @@ using System.Configuration;
 
 namespace HACK_KUET
 {
-    public partial class AdminEvents : System.Web.UI.Page
+    public partial class AdminMembers : System.Web.UI.Page
     {
         string cs = ConfigurationManager.ConnectionStrings["HACK_KUET_DB"].ConnectionString;
 
@@ -19,62 +19,59 @@ namespace HACK_KUET
 
             if (!IsPostBack)
             {
-                LoadEvents();
+                LoadMembers();
             }
         }
 
         // READ
-        void LoadEvents()
+        void LoadMembers()
         {
             using (SqlConnection con = new SqlConnection(cs))
             {
                 SqlDataAdapter da = new SqlDataAdapter(
-                    "SELECT * FROM Events ORDER BY EventDate DESC", con);
+                    "SELECT * FROM Members ORDER BY Id DESC", con);
 
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                GridViewEvents.DataSource = dt;
-                GridViewEvents.DataBind();
+                GridViewMembers.DataSource = dt;
+                GridViewMembers.DataBind();
             }
         }
 
         // CREATE
-        protected void btnAddEvent_Click(object sender, EventArgs e)
+        protected void btnAdd_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(cs))
             {
-                string query = @"INSERT INTO Events
-                                (Title, Description, EventDate, Location)
-                                VALUES
-                                (@Title, @Description, @EventDate, @Location)";
+                string query = @"INSERT INTO Members (Name, Position, ImageUrl)
+                 VALUES (@Name, @Position, @ImageUrl)";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
-                cmd.Parameters.AddWithValue("@Title", txtTitle.Text.Trim());
-                cmd.Parameters.AddWithValue("@Description", txtDescription.Text.Trim());
-                cmd.Parameters.AddWithValue("@EventDate", txtDate.Text.Trim());
-                cmd.Parameters.AddWithValue("@Location", txtLocation.Text.Trim());
+                cmd.Parameters.AddWithValue("@Name", txtName.Text.Trim());
+                cmd.Parameters.AddWithValue("@Position", txtPosition.Text.Trim());
+                cmd.Parameters.AddWithValue("@ImageUrl", txtImageUrl.Text.Trim());
 
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
 
             ClearFields();
-            LoadEvents();
+            LoadMembers();
         }
 
         // DELETE
-        protected void GridViewEvents_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
+        protected void GridViewMembers_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
         {
-            if (e.CommandName == "DeleteEvent")
+            if (e.CommandName == "DeleteMember")
             {
                 int id = Convert.ToInt32(e.CommandArgument);
 
                 using (SqlConnection con = new SqlConnection(cs))
                 {
                     SqlCommand cmd = new SqlCommand(
-                        "DELETE FROM Events WHERE Id=@Id", con);
+                        "DELETE FROM Members WHERE Id=@Id", con);
 
                     cmd.Parameters.AddWithValue("@Id", id);
 
@@ -82,16 +79,15 @@ namespace HACK_KUET
                     cmd.ExecuteNonQuery();
                 }
 
-                LoadEvents();
+                LoadMembers();
             }
         }
 
         void ClearFields()
         {
-            txtTitle.Text = "";
-            txtDescription.Text = "";
-            txtDate.Text = "";
-            txtLocation.Text = "";
+            txtName.Text = "";
+            txtEmail.Text = "";
+            txtRole.Text = "";
         }
     }
 }

@@ -110,6 +110,7 @@
     <Content Include="pages\AdminHome.aspx" />
     <Content Include="pages\AdminLogin.aspx" />
     <Content Include="pages\AdminLogout.aspx" />
+    <Content Include="pages\AdminMembers.aspx" />
     <Content Include="pages\AdminMessages.aspx" />
     <Content Include="pages\Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -306,6 +307,13 @@
     </Compile>
     <Compile Include="pages\AdminLogout.aspx.designer.cs">
       <DependentUpon>AdminLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminMembers.aspx.cs">
+      <DependentUpon>AdminMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminMembers.aspx.designer.cs">
+      <DependentUpon>AdminMembers.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\AdminMessages.aspx.cs">
       <DependentUpon>AdminMessages.aspx</DependentUpon>

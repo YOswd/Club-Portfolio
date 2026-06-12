@@ -17,9 +17,10 @@
 
             <p>Innovate. Build. Compete.</p>
 
-            <div class="hero-buttons">
-               <a href="Contact.aspx"><button class="btn">Join Us</button></a>
-            </div>
+           <button type="button" class="btn"
+    onclick="window.location.href='/pages/Contact.aspx'">
+    Join Us
+</button>
 
         </div>
 
@@ -41,9 +42,10 @@
         embedded systems, and IoT.
     </p>
 
-    <a href="About.aspx">
-        <button class="btn">Read More</button>
-    </a>
+    <button type="button" class="btn"
+    onclick="window.location.href='/pages/About.aspx'">
+    Read More
+</button>
 
 </section>
 
@@ -197,9 +199,10 @@
         Become part of a community of innovators, makers, and problem solvers.
     </p>
 
-    <a href="Contact.aspx">
-        <button class="btn">Contact Us</button>
-    </a>
+    <button type="button" class="btn"
+    onclick="window.location.href='/pages/Contact.aspx'">
+    Contact Us
+</button>
 
 </section>
 

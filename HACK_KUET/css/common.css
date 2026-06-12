@@ -9,6 +9,7 @@ body {
     background: #f5f7fa;
     color: #222;
     line-height: 1.6;
+    overflow-x: visible;
 }
 
 .body-content {
@@ -118,15 +119,22 @@ nav a:hover {
 
 .social-share {
     position: relative;
+    z-index: 999999;
 }
 
 .share-btn {
     background: transparent;
     border: none;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
 }
+
+    .share-btn:hover {
+        opacity: 1;
+    }
 
 .social-icons {
     position: absolute;
@@ -137,31 +145,47 @@ nav a:hover {
     gap: 12px;
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
+    transform: translateY(10px);
+    transition: 0.25s ease;
     z-index: 9999;
 }
 
-.social-icons.show {
+    .social-icons.show {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+    }
+
+/* SHOW ON HOVER */
+.social-share:hover .social-icons {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
 }
 
-.social-icons a {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #ff9800;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: 0.3s;
-}
+    .social-icons a {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #ff9800;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        opacity: 0.75;
+        font-size: 14px;
+        transition: 0.3s;
+    }
 
-.social-icons a:hover {
-    transform: scale(1.1);
-}
+        .social-icons a i {
+            font-weight: 300;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
 
 .join-section {
 

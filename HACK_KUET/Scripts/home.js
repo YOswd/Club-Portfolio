@@ -36,14 +36,17 @@ document.querySelectorAll(".btn").forEach(btn => {
     });
 });
 
-const shareBtn = document.querySelector(".share-btn");
-const socialIcons = document.querySelector(".social-icons");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (shareBtn && socialIcons) {
-    shareBtn.addEventListener("click", () => {
+    const shareBtn = document.querySelector(".share-btn");
+    const socialIcons = document.querySelector(".social-icons");
+
+    shareBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
         socialIcons.classList.toggle("show");
     });
-}
+
+});
 
 document.querySelectorAll(".toggle-btn").forEach(btn => {
     btn.addEventListener("click", () => {

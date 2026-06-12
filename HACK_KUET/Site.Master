@@ -69,7 +69,7 @@
 
     <div class="social-share">
 
-        <button class="share-btn">
+        <button type="button" class="share-btn">
             <i class="fas fa-share-alt"></i>
         </button>
 
