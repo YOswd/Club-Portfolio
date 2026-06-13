@@ -57,9 +57,33 @@
 }
 
 .timeline-content {
-
     background: white;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    text-align: left;
+}
+
+.description {
+    white-space: pre-line;
+}
+
+.timeline-content h3 {
+    margin: 10px 0;
+    color: #0f172a;
+}
+
+.timeline-content img {
+    display: block;
+}
+
+.description {
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+.meta {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 5px;
 }

@@ -18,28 +18,32 @@
         <div class="timeline-item">
             <div class="timeline-content">
 
-                 <<img src='<%# 
-    Eval("ImageUrl") == DBNull.Value || Eval("ImageUrl") == null || string.IsNullOrEmpty(Eval("ImageUrl").ToString())
-    ? ResolveUrl("~/images/default.jpg")
-    : ResolveUrl(Eval("ImageUrl").ToString())
-%>'
-style="width:100%;max-height:200px;object-fit:cover;border-radius:10px;" />
+    <img src='<%# 
+        Eval("ImageUrl") == DBNull.Value || Eval("ImageUrl") == null || string.IsNullOrEmpty(Eval("ImageUrl").ToString())
+        ? ResolveUrl("~/images/default.jpg")
+        : ResolveUrl(Eval("ImageUrl").ToString())
+    %>'
+    style="width:100%;max-height:200px;object-fit:cover;border-radius:10px;" />
 
-                <h3><%# Eval("Title") %></h3>
+    <!-- TITLE -->
+    <h3><%# Eval("Title") %></h3>
 
-                 <p>
-                 <%# Eval("StartDate", "{0:dd MMM yyyy}") %>
-                 <%# Eval("EndDate") != DBNull.Value && 
-                Convert.ToDateTime(Eval("EndDate")) != Convert.ToDateTime(Eval("StartDate"))
-                ? " - " + Eval("EndDate", "{0:dd MMM yyyy}")
-                : "" %>
-                </p>
+    <!-- DESCRIPTION -->
+    <p class="description"><%# Eval("Description") %></p>
 
-                <p><b>Location:</b> <%# Eval("Location") %></p>
+    <!-- DATE -->
+    <p class="meta">
+        📅 <%# Eval("StartDate", "{0:dd MMM yyyy}") %>
+        <%# Eval("EndDate") != DBNull.Value &&
+            Convert.ToDateTime(Eval("EndDate")) != Convert.ToDateTime(Eval("StartDate"))
+            ? " - " + Eval("EndDate", "{0:dd MMM yyyy}")
+            : "" %>
+    </p>
 
-                <p><%# Eval("Description") %></p>
+    <!-- LOCATION -->
+    <p class="meta">📍 <%# Eval("Location") %></p>
 
-            </div>
+</div>
         </div>
 
     </ItemTemplate>

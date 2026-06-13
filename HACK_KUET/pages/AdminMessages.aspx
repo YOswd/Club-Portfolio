@@ -128,29 +128,26 @@ Inherits="HACK_KUET.AdminMessages" %>
     <Columns>
 
         <asp:BoundField DataField="Id" HeaderText="ID">
-            <ItemStyle Width="40px" />
+            <ItemStyle Width="50px" HorizontalAlign="Center" />
+            <HeaderStyle Width="50px" />
         </asp:BoundField>
 
         <asp:BoundField DataField="Name" HeaderText="Name">
-            <ItemStyle Width="120px" />
-        </asp:BoundField>
+    <ItemStyle Width="120px" />
+</asp:BoundField>
 
-        <asp:BoundField DataField="Email" HeaderText="Email">
-            <ItemStyle Width="180px" />
-        </asp:BoundField>
+<asp:BoundField DataField="Email" HeaderText="Email">
+    <ItemStyle Width="180px" />
+</asp:BoundField>
 
-        <asp:BoundField DataField="Subject" HeaderText="Subject">
-            <ItemStyle Width="150px" />
-        </asp:BoundField>
+<asp:BoundField DataField="Subject" HeaderText="Subject">
+    <ItemStyle Width="150px" />
+</asp:BoundField>
 
-        <asp:TemplateField HeaderText="Message">
-    <ItemStyle Width="400px" />
-
+<asp:TemplateField HeaderText="Message">
+    <ItemStyle Width="300px" />
     <ItemTemplate>
-        <div style="
-            max-width: 400px;
-            white-space: normal;
-            word-break: break-word;">
+        <div style="white-space: normal; word-break: break-word;">
             <%# Eval("Message") %>
         </div>
     </ItemTemplate>

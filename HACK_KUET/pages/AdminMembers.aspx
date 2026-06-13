@@ -9,14 +9,42 @@ Inherits="HACK_KUET.AdminMembers" %>
 <h2>Members Management</h2>
 
 <!-- ADD FORM -->
-<div style="background:white;padding:20px;margin-bottom:20px;border-radius:10px;">
+<div class="event-card modern-member">
 
-    <asp:TextBox ID="txtName" runat="server" />
-<asp:TextBox ID="txtPosition" runat="server" />
-<asp:TextBox ID="txtImageUrl" runat="server" />
+    <h2 class="event-title">👥 Add New Member</h2>
 
-    <asp:Button ID="btnAdd" runat="server" Text="Add Member"
-        OnClick="btnAdd_Click" CssClass="btn" />
+    <div class="form-grid">
+
+        <div class="field">
+            <label>Member Name</label>
+            <asp:TextBox ID="txtName" runat="server"
+                CssClass="input modern-input"
+                placeholder="Enter member name" />
+        </div>
+
+        <div class="field">
+            <label>Position</label>
+            <asp:TextBox ID="txtPosition" runat="server"
+                CssClass="input modern-input"
+                placeholder="e.g. President / Developer / Member" />
+        </div>
+
+        <div class="field">
+            <label>Image URL</label>
+            <asp:TextBox ID="txtImageUrl" runat="server"
+                CssClass="input modern-input"
+                placeholder="Paste image URL here" />
+        </div>
+
+    </div>
+
+    <!-- CENTER BUTTON -->
+    <div class="btn-wrapper">
+        <asp:Button ID="btnAdd" runat="server"
+            Text="Add Member"
+            OnClick="btnAdd_Click"
+            CssClass="btn modern-btn" />
+    </div>
 
 </div>
 
@@ -24,17 +52,32 @@ Inherits="HACK_KUET.AdminMembers" %>
 <asp:GridView ID="GridViewMembers" runat="server"
     AutoGenerateColumns="False"
     DataKeyNames="Id"
-    OnRowCommand="GridViewMembers_RowCommand">
+    CssClass="grid"
+    Style="width:100%; table-layout: fixed;">
 
     <Columns>
 
-        <asp:BoundField DataField="Id" HeaderText="ID" />
+        <asp:BoundField DataField="Id" HeaderText="ID">
+    <ItemStyle Width="60px" HorizontalAlign="Center" />
+</asp:BoundField>
 
-        <asp:BoundField DataField="Name" HeaderText="Name" />
+<asp:BoundField DataField="Name" HeaderText="Name">
+    <ItemStyle Width="180px" />
+</asp:BoundField>
 
-        <asp:BoundField DataField="Position" HeaderText="Position" />
+<asp:BoundField DataField="Position" HeaderText="Position">
+    <ItemStyle Width="180px" />
+</asp:BoundField>
 
-        <asp:BoundField DataField="ImageUrl" HeaderText="Image" />
+<asp:TemplateField HeaderText="Image">
+    <ItemStyle Width="100px" HorizontalAlign="Center" />
+    <ItemTemplate>
+        <div style="display:flex; justify-content:center; align-items:center;">
+            <img src='<%# Eval("ImageUrl") %>'
+                 style="width:50px;height:50px;border-radius:50%;object-fit:cover;" />
+        </div>
+    </ItemTemplate>
+</asp:TemplateField>
 
         <asp:TemplateField HeaderText="Action">
             <ItemTemplate>
