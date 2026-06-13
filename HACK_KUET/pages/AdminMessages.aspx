@@ -98,14 +98,6 @@ Inherits="HACK_KUET.AdminMessages" %>
     width: 100%;
     table-layout: fixed;
 }
-
-.delete-btn {
-    width: auto;
-    display: inline-block;
-    padding: 2px 6px;
-    font-size: 11px;
-    white-space: nowrap;
-}
     </style>
 
 </asp:Content>
@@ -119,28 +111,11 @@ Inherits="HACK_KUET.AdminMessages" %>
 
     <div class="header-right">
         <span>Total Messages: <asp:Label ID="lblCountTop" runat="server" Text="0" /></span>
-
-        <asp:HyperLink ID="logoutLink" runat="server"
-            NavigateUrl="~/pages/AdminLogout.aspx"
-            CssClass="logout-btn">
-            Logout
-        </asp:HyperLink>
     </div>
 
 </div>
 
     <div class="dashboard">
-
-        <!-- CARDS -->
-        <div class="cards">
-
-            <div class="card">
-                <h2><asp:Label ID="lblCount" runat="server" Text="0" /></h2>
-                <p>Total Messages</p>
-            </div>
-
-        </div>
-
         <!-- TABLE -->
         <div class="table-box">
 

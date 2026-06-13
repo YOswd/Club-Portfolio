@@ -43,7 +43,6 @@ namespace HACK_KUET
                         GridViewMessages.DataSource = dt;
                         GridViewMessages.DataBind();
 
-                        lblCount.Text = dt.Rows.Count.ToString();
                         lblCountTop.Text = dt.Rows.Count.ToString();
                     }
                 }
@@ -64,6 +63,8 @@ namespace HACK_KUET
                 Response.Redirect("AdminLogin.aspx");
                 return;
             }
+
+            Response.Write("Session = " + Session["Admin"]);
 
             if (e.CommandName == "DeleteMessage")
             {

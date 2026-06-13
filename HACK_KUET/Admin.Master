@@ -79,9 +79,30 @@
 
 /* TOP BAR */
 .topbar {
-    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
     padding: 15px 20px;
+
+    background: white;
     border-bottom: 1px solid #ddd;
+
+    box-sizing: border-box;
+}
+
+.topbar h3 {
+    margin: 0;
+}
+
+.topbar .logout {
+    margin-left: auto;
+    background: #ef4444;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
 /* PAGE CONTENT */
@@ -114,6 +135,70 @@
     margin: 10px 0 0;
     color: gray;
 }
+
+.event-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.input-small {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.grid {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.grid th {
+    background: #0f172a;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.grid td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    word-break: break-word;
+}
+
+.grid tr:hover {
+    background: #f8fafc;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: black;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
     </style>
 
     <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
@@ -133,16 +218,17 @@
         <a href="AdminEvents.aspx">📅 Events</a>
         <a href="AdminMembers.aspx">👥 Members</a>
         <hr />
-
-        <a href="AdminLogout.aspx" class="logout">🚪 Logout</a>
-
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
         <div class="topbar">
-            <h3>Admin Panel</h3>
+        <h3>Admin Panel</h3>
+
+        <a href="AdminLogout.aspx" class="logout">
+            🚪 Logout
+        </a>
         </div>
 
         <div class="content">

@@ -29,7 +29,7 @@ namespace HACK_KUET
             using (SqlConnection con = new SqlConnection(cs))
             {
                 SqlDataAdapter da = new SqlDataAdapter(
-                    "SELECT * FROM Members ORDER BY Id DESC", con);
+                    "SELECT * FROM Members ORDER BY Id ASC", con);
 
                 DataTable dt = new DataTable();
                 da.Fill(dt);

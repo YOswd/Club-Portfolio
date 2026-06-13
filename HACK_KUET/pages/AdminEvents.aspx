@@ -9,42 +9,31 @@ Inherits="HACK_KUET.AdminEvents" %>
 <h2>Events Management</h2>
 
 <!-- ADD EVENT FORM -->
-<div style="background:white;padding:20px;margin-bottom:20px;border-radius:10px;">
+<div class="event-card">
+
+    <h3>➕ Add New Event</h3>
 
     <asp:TextBox ID="txtTitle" runat="server" placeholder="Event Title" CssClass="input" />
-    <br /><br />
+    <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" placeholder="Event Description" CssClass="input" />
 
-    <asp:TextBox ID="txtDescription" runat="server"
-        TextMode="MultiLine"
-        placeholder="Event Description"
-        CssClass="input" />
+    <div class="row">
+        <asp:CheckBox ID="chkMultiDay" runat="server" Text="Multi-day event" />
+    </div>
 
-    <br /><br />
+    <div class="row">
+        Start:
+        <asp:TextBox ID="txtStartDate" runat="server" TextMode="Date" CssClass="input-small" />
 
-    <asp:CheckBox ID="chkMultiDay" runat="server" Text="Multi-day event" />
-    <br /><br />
+        End:
+        <asp:TextBox ID="txtEndDate" runat="server" TextMode="Date" CssClass="input-small" />
+    </div>
 
-    Start Date:
-    <asp:TextBox ID="txtStartDate" runat="server" TextMode="Date" />
-    <br /><br />
+    <asp:TextBox ID="txtLocation" runat="server" placeholder="Location" CssClass="input" />
 
-    End Date:
-    <asp:TextBox ID="txtEndDate" runat="server" TextMode="Date" />
-    <br /><br />
+    <asp:FileUpload ID="fuImage" runat="server" />
 
-    <asp:TextBox ID="txtLocation" runat="server"
-    placeholder="Location" CssClass="input" />
-
-    <br /><br />
-
-    <asp:FileUpload ID="fuImage" runat="server" CssClass="input" />
-
-    <br /><br />
-
-    <asp:Button ID="btnAddEvent" runat="server"
-        Text="Add Event"
-        CssClass="btn"
-        OnClick="btnAddEvent_Click" />
+    <asp:Button ID="btnAddEvent" runat="server" Text="Add Event"
+        CssClass="btn" OnClick="btnAddEvent_Click" />
 
 </div>
 

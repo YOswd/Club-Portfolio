@@ -21,13 +21,14 @@ namespace HACK_KUET
 
             if (username == "admin" && password == "1234")
             {
-                Session["Admin"] = username;
+                Session["Admin"] = "admin";
 
-                Response.Redirect("AdminMessages.aspx");
+                Response.Redirect("AdminHome.aspx");
             }
             else
             {
-                Response.Write("<script>alert('Invalid username or password');</script>");
+                ClientScript.RegisterStartupScript(this.GetType(),
+                    "alert", "alert('Invalid username or password');", true);
             }
         }
     }
