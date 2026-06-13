@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <script src='<%= ResolveUrl("~/Scripts/bootstrap.js") %>'></script>
+        <script src='<%= ResolveUrl("~/Scripts/home.js") %>'></script>
         <footer>
 
     <div class="footer-container">

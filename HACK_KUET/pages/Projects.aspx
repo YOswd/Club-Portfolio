@@ -123,7 +123,7 @@
 
         <div class="project-header">
             <div class="short-info">
-                <h3>AUTONOMOUS DRONE</h3>
+                <h3>SOCCER BOT</h3>
                 <p>GPS-based autonomous aerial system.</p>
                 <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
@@ -159,7 +159,7 @@
 
         <div class="project-header">
             <div class="short-info">
-                <h3>AUTONOMOUS DRONE</h3>
+                <h3>3D PRINTER</h3>
                 <p>GPS-based autonomous aerial system.</p>
                 <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
@@ -194,7 +194,7 @@
 
         <div class="project-header">
             <div class="short-info">
-                <h3>AUTONOMOUS DRONE</h3>
+                <h3>SMART DUSTBIN</h3>
                 <p>GPS-based autonomous aerial system.</p>
                 <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
             </div>
@@ -224,6 +224,41 @@
             </div>
         </div>
     </div>
+
+    <div class="project-detail-card">
+
+    <div class="project-header">
+        <div class="short-info">
+            <h3>SMART CAR</h3>
+            <p>GPS-based autonomous aerial system.</p>
+            <button type="button" class="btn toggle-btn open-btn">SEE DETAILS</button>
+        </div>
+
+        <div class="img-wrapper">
+            <img src='<%= ResolveUrl("~/images/project4.jpeg") %>' alt="Smart Car" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-body">
+        <div class="full-info">
+            <p>Drone description...</p>
+
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>Flight Controller</li>
+                <li>GPS Module</li>
+                <li>Brushless Motors</li>
+            </ul>
+
+            <h4>Achievements</h4>
+            <ul>
+                <li>Top 5 UAV Contest</li>
+            </ul>
+
+            <button type="button" class="btn toggle-btn close-btn">SEE LESS</button>
+        </div>
+    </div>
+</div>
 
 </section>
 

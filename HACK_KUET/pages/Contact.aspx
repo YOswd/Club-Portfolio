@@ -40,8 +40,8 @@
 
             <div class="social-links">
 
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/share/1Redgdfcbi/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@hack-hardwareaccelerationc9241"><i class="fab fa-youtube"></i></a>
 
             </div>
 

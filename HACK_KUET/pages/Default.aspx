@@ -167,27 +167,31 @@
 
 <!-- STATS -->
 <section class="stats reveal">
+    <div class="container">
+        <div class="stats-grid">
 
-    <div class="stat-box">
-        <h2>50+</h2>
-        <p>Active Members</p>
+            <div class="stat-box">
+                <h2>50+</h2>
+                <p>Active Members</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>15+</h2>
+                <p>Projects</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>10+</h2>
+                <p>Competitions</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>5+</h2>
+                <p>Years Active</p>
+            </div>
+
+        </div>
     </div>
-
-    <div class="stat-box">
-        <h2>15+</h2>
-        <p>Projects</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>10+</h2>
-        <p>Competitions</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>5+</h2>
-        <p>Years Active</p>
-    </div>
-
 </section>
 
 <!-- JOIN -->

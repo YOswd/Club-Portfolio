@@ -32,7 +32,7 @@ window.addEventListener("load", revealSections);
 
 document.querySelectorAll(".btn").forEach(btn => {
     btn.addEventListener("click", () => {
-        alert("Thank you for your interest in HACK KUET!");
+        //alert("Thank you for your interest in HACK KUET!");
     });
 });
 
