@@ -86,9 +86,13 @@ Inherits="HACK_KUET.AdminEvents" %>
     <ItemStyle Width="150px" />
 </asp:BoundField>
 
-<asp:BoundField DataField="Description" HeaderText="Description">
-    <ItemStyle Width="250px" />
-</asp:BoundField>
+<asp:TemplateField HeaderText="Description">
+    <ItemTemplate>
+        <div style="max-width:250px; white-space:normal; word-break:break-word;">
+            <%# Eval("Description") %>
+        </div>
+    </ItemTemplate>
+</asp:TemplateField>
 
 <asp:TemplateField HeaderText="Date">
     <ItemStyle Width="150px" />
@@ -103,6 +107,33 @@ Inherits="HACK_KUET.AdminEvents" %>
 <asp:BoundField DataField="Location" HeaderText="Location">
     <ItemStyle Width="120px" />
 </asp:BoundField>
+
+        <asp:TemplateField HeaderText="Action">
+    <ItemTemplate>
+
+        <div style="display:flex; gap:8px; justify-content:center; align-items:center;">
+
+            <asp:Button 
+                ID="btnEdit" 
+                runat="server"
+                Text="Edit"
+                CssClass="btn-edit"
+                CommandName="EditMember"
+                CommandArgument='<%# Eval("Id") %>' />
+
+            <asp:Button 
+                ID="btnDelete" 
+                runat="server"
+                Text="Delete"
+                CssClass="btn-delete"
+                CommandName="DeleteMember"
+                CommandArgument='<%# Eval("Id") %>'
+                OnClientClick="return confirm('Delete this member?');" />
+
+        </div>
+
+    </ItemTemplate>
+</asp:TemplateField>
 
     </Columns>
 

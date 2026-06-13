@@ -162,7 +162,7 @@ Inherits="HACK_KUET.AdminMessages" %>
             Text="Delete"
             CommandName="DeleteMessage"
             CommandArgument='<%# Eval("Id") %>'
-            CssClass="delete-btn"
+            CssClass="btn-delete"
             OnClientClick="return confirm('Delete this message?');" />
     </ItemTemplate>
 </asp:TemplateField>

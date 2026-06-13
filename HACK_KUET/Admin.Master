@@ -343,14 +343,23 @@ select,
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
 }
 
-.delete-btn {
-    background: #ef4444;
-    color: black;
-    padding: 8px 8px;
+.btn-edit {
+    background: #0ea5e9;
+    color: white;
     border: none;
-    border-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
     cursor: pointer;
-    transition: .3s;
+}
+
+.btn-delete {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
 }
     </style>
 

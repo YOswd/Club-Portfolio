@@ -79,16 +79,32 @@ Inherits="HACK_KUET.AdminMembers" %>
     </ItemTemplate>
 </asp:TemplateField>
 
-        <asp:TemplateField HeaderText="Action">
-            <ItemTemplate>
-                <asp:Button ID="btnDelete" runat="server"
-                    Text="Delete"
-                    CommandName="DeleteMember"
-                    CommandArgument='<%# Eval("Id") %>'
-                    CssClass="delete-btn"
-                    OnClientClick="return confirm('Delete this member?');" />
-            </ItemTemplate>
-        </asp:TemplateField>
+                <asp:TemplateField HeaderText="Action">
+    <ItemTemplate>
+
+        <div style="display:flex; gap:8px; justify-content:center; align-items:center;">
+
+            <asp:Button 
+                ID="btnEdit" 
+                runat="server"
+                Text="Edit"
+                CssClass="btn-edit"
+                CommandName="EditMember"
+                CommandArgument='<%# Eval("Id") %>' />
+
+            <asp:Button 
+                ID="btnDelete" 
+                runat="server"
+                Text="Delete"
+                CssClass="btn-delete"
+                CommandName="DeleteMember"
+                CommandArgument='<%# Eval("Id") %>'
+                OnClientClick="return confirm('Delete this member?');" />
+
+        </div>
+
+    </ItemTemplate>
+</asp:TemplateField>
 
     </Columns>
 
