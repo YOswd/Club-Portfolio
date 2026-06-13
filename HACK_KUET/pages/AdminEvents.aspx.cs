@@ -23,13 +23,12 @@ namespace HACK_KUET
             }
         }
 
-        // READ
         void LoadEvents()
         {
             using (SqlConnection con = new SqlConnection(cs))
             {
                 SqlDataAdapter da = new SqlDataAdapter(
-                    "SELECT * FROM Events ORDER BY EventDate DESC", con);
+                    "SELECT * FROM Events ORDER BY StartDate DESC", con);
 
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -39,22 +38,65 @@ namespace HACK_KUET
             }
         }
 
-        // CREATE
         protected void btnAddEvent_Click(object sender, EventArgs e)
         {
+            DateTime startDate, endDate;
+
+            // Start Date
+            if (!DateTime.TryParse(txtStartDate.Text.Trim(), out startDate))
+            {
+                Response.Write("<script>alert('Invalid start date');</script>");
+                return;
+            }
+
+            // End Date (only if multi-day)
+            if (chkMultiDay.Checked)
+            {
+                if (!DateTime.TryParse(txtEndDate.Text.Trim(), out endDate))
+                {
+                    Response.Write("<script>alert('Invalid end date');</script>");
+                    return;
+                }
+            }
+            else
+            {
+                endDate = startDate;
+            }
+
+            // Image Upload
+            string imagePath = "";
+
+            if (fuImage.HasFile)
+            {
+                string fileName = System.IO.Path.GetFileName(fuImage.FileName);
+                string folderPath = Server.MapPath("~/images/events/");
+
+                if (!System.IO.Directory.Exists(folderPath))
+                {
+                    System.IO.Directory.CreateDirectory(folderPath);
+                }
+
+                string fullPath = folderPath + fileName;
+                fuImage.SaveAs(fullPath);
+
+                imagePath = "~/images/events/" + fileName;
+            }
+
             using (SqlConnection con = new SqlConnection(cs))
             {
                 string query = @"INSERT INTO Events
-                                (Title, Description, EventDate, Location)
+                                (Title, Description, StartDate, EndDate, Location, ImageUrl)
                                 VALUES
-                                (@Title, @Description, @EventDate, @Location)";
+                                (@Title, @Description, @StartDate, @EndDate, @Location, @ImageUrl)";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 cmd.Parameters.AddWithValue("@Title", txtTitle.Text.Trim());
                 cmd.Parameters.AddWithValue("@Description", txtDescription.Text.Trim());
-                cmd.Parameters.AddWithValue("@EventDate", txtDate.Text.Trim());
+                cmd.Parameters.AddWithValue("@StartDate", startDate);
+                cmd.Parameters.AddWithValue("@EndDate", endDate);
                 cmd.Parameters.AddWithValue("@Location", txtLocation.Text.Trim());
+                cmd.Parameters.AddWithValue("@ImageUrl", imagePath);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -90,8 +132,11 @@ namespace HACK_KUET
         {
             txtTitle.Text = "";
             txtDescription.Text = "";
-            txtDate.Text = "";
+            txtStartDate.Text = "";
+            txtEndDate.Text = "";
             txtLocation.Text = "";
+
+            chkMultiDay.Checked = false;
         }
     }
 }

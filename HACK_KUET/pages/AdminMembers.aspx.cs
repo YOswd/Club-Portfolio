@@ -86,8 +86,8 @@ namespace HACK_KUET
         void ClearFields()
         {
             txtName.Text = "";
-            txtEmail.Text = "";
-            txtRole.Text = "";
+            txtPosition.Text = "";
+            txtImageUrl.Text = "";
         }
     }
 }

@@ -13,43 +13,37 @@
 
     <div class="timeline">
 
+        <asp:Repeater ID="rptEvents" runat="server">
+    <ItemTemplate>
         <div class="timeline-item">
             <div class="timeline-content">
-                <h3>Robotics Workshop 2026</h3>
-                <p>
-                    Introduction to Arduino, sensors,
-                    motors and autonomous robotics.
+
+                 <<img src='<%# 
+    Eval("ImageUrl") == DBNull.Value || Eval("ImageUrl") == null || string.IsNullOrEmpty(Eval("ImageUrl").ToString())
+    ? ResolveUrl("~/images/default.jpg")
+    : ResolveUrl(Eval("ImageUrl").ToString())
+%>'
+style="width:100%;max-height:200px;object-fit:cover;border-radius:10px;" />
+
+                <h3><%# Eval("Title") %></h3>
+
+                 <p>
+                 <%# Eval("StartDate", "{0:dd MMM yyyy}") %>
+                 <%# Eval("EndDate") != DBNull.Value && 
+                Convert.ToDateTime(Eval("EndDate")) != Convert.ToDateTime(Eval("StartDate"))
+                ? " - " + Eval("EndDate", "{0:dd MMM yyyy}")
+                : "" %>
                 </p>
+
+                <p><b>Location:</b> <%# Eval("Location") %></p>
+
+                <p><%# Eval("Description") %></p>
+
             </div>
         </div>
 
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Line Follower Competition</h3>
-                <p>
-                    Internal competition for beginner robotics teams.
-                </p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>IoT Bootcamp</h3>
-                <p>
-                    Smart home and cloud-based monitoring systems.
-                </p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Hackathon Participation</h3>
-                <p>
-                    National-level hardware innovation competition.
-                </p>
-            </div>
-        </div>
-
+    </ItemTemplate>
+</asp:Repeater>
     </div>
 
 </section>

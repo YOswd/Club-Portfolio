@@ -21,13 +21,23 @@ Inherits="HACK_KUET.AdminEvents" %>
 
     <br /><br />
 
-    <asp:TextBox ID="txtDate" runat="server"
-        placeholder="Event Date (yyyy-mm-dd)" CssClass="input" />
+    <asp:CheckBox ID="chkMultiDay" runat="server" Text="Multi-day event" />
+    <br /><br />
 
+    Start Date:
+    <asp:TextBox ID="txtStartDate" runat="server" TextMode="Date" />
+    <br /><br />
+
+    End Date:
+    <asp:TextBox ID="txtEndDate" runat="server" TextMode="Date" />
     <br /><br />
 
     <asp:TextBox ID="txtLocation" runat="server"
-        placeholder="Location" CssClass="input" />
+    placeholder="Location" CssClass="input" />
+
+    <br /><br />
+
+    <asp:FileUpload ID="fuImage" runat="server" CssClass="input" />
 
     <br /><br />
 
@@ -50,9 +60,15 @@ Inherits="HACK_KUET.AdminEvents" %>
         <asp:BoundField DataField="Id" HeaderText="ID" />
         <asp:BoundField DataField="Title" HeaderText="Title" />
         <asp:BoundField DataField="Description" HeaderText="Description" />
-        <asp:BoundField DataField="EventDate" HeaderText="Date" />
+        <asp:TemplateField HeaderText="Date">
+        <ItemTemplate>
+        <%# Eval("StartDate", "{0:dd MMM yyyy}") %>
+        <%# Eval("EndDate") != DBNull.Value
+            ? " - " + Eval("EndDate", "{0:dd MMM yyyy}")
+            : "" %>
+        </ItemTemplate>
+        </asp:TemplateField>
         <asp:BoundField DataField="Location" HeaderText="Location" />
-        <asp:BoundField DataField="CreatedAt" HeaderText="Created" />
 
         <asp:TemplateField HeaderText="Action">
             <ItemTemplate>
