@@ -134,21 +134,21 @@
 
             <div class="event-card">
                 <div class="img-container">
-                    <img src='<%= ResolveUrl("~/images/event1.jpeg") %>'>
+                    <img src='<%= ResolveUrl("~/images/event8.jpeg") %>'>
                 </div>
                 <h3>FREE HACK WORKSHOP 2025</h3>
             </div>
 
             <div class="event-card">
                 <div class="img-container">
-                    <img src='<%= ResolveUrl("~/images/event2.jpeg") %>'>
+                    <img src='<%= ResolveUrl("~/images/event1.jpeg") %>'>
                 </div>
                 <h3>OPEN WORKSHOP FOR BATCH 2K23</h3>
             </div>
 
             <div class="event-card">
                 <div class="img-container">
-                    <img src='<%= ResolveUrl("~/images/event3.jpeg") %>'>
+                    <img src='<%= ResolveUrl("~/images/event2.jpeg") %>'>
                 </div>
                 <h3>HACK IN'</h3>
             </div>
@@ -178,32 +178,35 @@
 </section>
 
 <!-- STATS -->
-<section class="stats reveal">
+<section>
     <div class="container">
-        <div class="stats-grid">
+        <h2>Club Statistics</h2>
+
+        <div class="stats">
 
             <div class="stat-box">
-                <h2>50+</h2>
+                <h1>100+</h1>
                 <p>Active Members</p>
             </div>
 
             <div class="stat-box">
-                <h2>15+</h2>
+                <h1>20+</h1>
                 <p>Projects</p>
             </div>
 
             <div class="stat-box">
-                <h2>10+</h2>
+                <h1>10+</h1>
                 <p>Competitions</p>
             </div>
 
             <div class="stat-box">
-                <h2>5+</h2>
-                <p>Years Active</p>
+                <h1>15+</h1>
+                <p>Active</p>
             </div>
 
         </div>
     </div>
+
 </section>
 
 <!-- JOIN -->

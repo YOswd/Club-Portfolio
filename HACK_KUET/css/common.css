@@ -9,7 +9,7 @@ body {
     color: #222;
     line-height: 1.6;
     overflow-x: hidden;
-    background: linear-gradient( 135deg, #f8fafc 0%, #eef4f8 35%, #fdfdfd 70%, #f3f7fa 100% );
+    background: radial-gradient(circle at top left, rgba(255,152,0,.08), transparent 30%), radial-gradient(circle at bottom right, rgba(18,78,107,.08), transparent 35%), linear-gradient( 135deg, #f8fafc 0%, #f4f7fb 40%, #ffffff 100% );
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -272,4 +272,44 @@ nav a:hover {
     .project-detail-card img {
         height: 250px;
     }
+}
+
+/* Home */
+.default-page {
+    background: linear-gradient(135deg,#fffdf7,#f0fdf4,#dcfce7);
+}
+
+/* About */
+.about-page {
+    background: linear-gradient(135deg,#fff8f1,#ffedd5,#fffaf5);
+}
+
+/* Members */
+.members-page {
+    background: linear-gradient(135deg,#eff6ff,#dbeafe,#f8fbff);
+}
+
+/* Projects */
+.projects-page {
+    background: linear-gradient(135deg,#ecfeff,#cffafe,#f8feff);
+}
+
+/* Events */
+.events-page {
+    background: linear-gradient(135deg,#f8fafc,#e2e8f0,#fdfefe);
+}
+
+/* Gallery */
+.gallery-page {
+    background: linear-gradient(135deg,#faf5ff,#ede9fe,#fcfaff);
+}
+
+/* Achievements */
+.achievements-page {
+    background: linear-gradient(135deg,#fffbeb,#fef3c7,#fffdf7);
+}
+
+/* Contact */
+.contact-page {
+    background: linear-gradient(135deg,#f0fdf4,#dcfce7,#fafffc);
 }

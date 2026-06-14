@@ -45,19 +45,19 @@
         <div class="achievement-grid">
 
             <div class="achievement-card">
-                <h3>🥇 1st Place</h3>
+                <h3>1st Place</h3>
                 <p>National Robotics Festival</p>
                 <span>2025</span>
             </div>
 
             <div class="achievement-card">
-                <h3>🥈 Runner Up</h3>
+                <h3>2nd Runner Up</h3>
                 <p>IoT Innovation Challenge</p>
                 <span>2024</span>
             </div>
 
             <div class="achievement-card">
-                <h3>🏆 Top 10 Team</h3>
+                <h3>Top 10 Team</h3>
                 <p>RoboCup Bangladesh</p>
                 <span>2025</span>
             </div>

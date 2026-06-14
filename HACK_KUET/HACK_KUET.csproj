@@ -112,6 +112,7 @@
     <Content Include="pages\AdminLogout.aspx" />
     <Content Include="pages\AdminMembers.aspx" />
     <Content Include="pages\AdminMessages.aspx" />
+    <Content Include="pages\AdminProjects.aspx" />
     <Content Include="pages\Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -329,6 +330,13 @@
     </Compile>
     <Compile Include="pages\AdminMessages.aspx.designer.cs">
       <DependentUpon>AdminMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AdminProjects.aspx.cs">
+      <DependentUpon>AdminProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminProjects.aspx.designer.cs">
+      <DependentUpon>AdminProjects.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

@@ -1,5 +1,3 @@
-C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.csproj.AssemblyReference.cache
-C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\bin\HACK_KUET.dll.config
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\bin\HACK_KUET.dll
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\bin\HACK_KUET.pdb
@@ -67,6 +65,8 @@ C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\bin\Newtonsoft.Json.xml
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\bin\Antlr3.Runtime.pdb
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.csproj.AssemblyReference.cache
+C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.csproj.Up2Date
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.dll
 C:\Users\Lenovo\HTML-CSS\ClubPortfolio\HACK_KUET\obj\Debug\HACK_KUET.pdb

@@ -6,13 +6,28 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="login-box">
-    <h2>Admin Panel Login</h2>
 
-    <asp:TextBox ID="txtUser" runat="server" placeholder="Username" CssClass="input" />
-    <asp:TextBox ID="txtPass" runat="server" TextMode="Password" placeholder="Password" CssClass="input" />
+    <div class="logo">
+        🤖
+    </div>
 
-    <asp:Button ID="btnLogin" runat="server" Text="Login"
-        OnClick="btnLogin_Click" CssClass="btn" />
+    <h2>Admin Login</h2>
+    <p class="subtitle">HACK KUET Administration Panel</p>
+
+    <asp:TextBox ID="txtUser" runat="server"
+        placeholder="Username"
+        CssClass="input" />
+
+    <asp:TextBox ID="txtPass" runat="server"
+        TextMode="Password"
+        placeholder="Password"
+        CssClass="input" />
+
+    <asp:Button ID="btnLogin" runat="server"
+        Text="Sign In"
+        CssClass="btn"
+        OnClick="btnLogin_Click" />
+
 </div>
 
 </asp:Content>

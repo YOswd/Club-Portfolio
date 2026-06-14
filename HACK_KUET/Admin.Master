@@ -109,31 +109,61 @@
 .content {
     padding: 20px;
 }
+
 .dashboard-cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
+/* Base card */
 .card {
-    flex: 1;
-    min-width: 200px;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    height: 150px;
+    border-radius: 16px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Number */
 .card h1 {
+    font-size: 42px;
     margin: 0;
-    font-size: 40px;
-    color: #0f172a;
+    font-weight: 700;
 }
 
+/* Label */
 .card p {
-    margin: 10px 0 0;
-    color: gray;
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Individual colors */
+.card.messages {
+    background: linear-gradient(135deg, #ebf5ebf2, #ead4d4);
+}
+
+.card.events {
+    background: linear-gradient(135deg, #edefd2, #f7a780);
+}
+
+.card.members {
+    background: linear-gradient(135deg, #f0aeae, #db9090);
+}
+
+.card.projects {
+    background: linear-gradient(135deg, #bbf0f1, #78eccb);
 }
 
 .event-card {
@@ -374,6 +404,7 @@ select,
     display: inline-block;
 }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
 </head>
@@ -391,6 +422,7 @@ select,
         <a href="AdminMessages.aspx">📩 Messages</a>
         <a href="AdminEvents.aspx">📅 Events</a>
         <a href="AdminMembers.aspx">👥 Members</a>
+        <a href="AdminProjects.aspx">🤖 Projects</a>
         <hr />
     </div>
 

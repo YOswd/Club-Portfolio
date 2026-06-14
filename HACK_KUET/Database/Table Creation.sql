@@ -25,3 +25,14 @@ CREATE TABLE Events (
     ImageUrl NVARCHAR(500) NULL,
     Description NVARCHAR(MAX) NULL
 );
+
+CREATE TABLE Projects (
+    ProjectID INT IDENTITY(1,1) PRIMARY KEY,
+    Title NVARCHAR(200) NOT NULL,
+    ShortDescription NVARCHAR(300),
+    FullDescription NVARCHAR(MAX),
+    ImageUrl NVARCHAR(500),
+    Category NVARCHAR(100),
+    IsFeatured BIT DEFAULT 0,
+    CreatedDate DATETIME DEFAULT GETDATE()
+);

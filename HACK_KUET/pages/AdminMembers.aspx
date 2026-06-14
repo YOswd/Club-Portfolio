@@ -53,6 +53,7 @@ Inherits="HACK_KUET.AdminMembers" %>
     AutoGenerateColumns="False"
     DataKeyNames="Id"
     CssClass="grid"
+    OnRowCommand="GridViewMembers_RowCommand"
     Style="width:100%; table-layout: fixed;">
 
     <Columns>

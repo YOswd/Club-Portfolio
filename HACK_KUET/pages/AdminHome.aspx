@@ -8,21 +8,32 @@ Inherits="HACK_KUET.AdminHome" %>
 
     <div class="dashboard-cards">
 
-        <div class="card">
-            <h1><asp:Label ID="lblMessages" runat="server" Text="0" /></h1>
-            <p>Total Messages</p>
-        </div>
-
-        <div class="card">
-            <h1><asp:Label ID="lblEvents" runat="server" Text="0" /></h1>
-            <p>Total Events</p>
-        </div>
-
-        <div class="card">
-            <h1><asp:Label ID="lblMembers" runat="server" Text="0" /></h1>
-            <p>Total Members</p>
-        </div>
-
+    <div class="card messages">
+        <i class="fa-solid fa-envelope icon"></i>
+        <h1><asp:Label ID="lblMessages" runat="server" Text="0" /></h1>
+        <p>Messages</p>
     </div>
+
+    <div class="card events">
+        <i class="fa-solid fa-calendar-days icon"></i>
+        <h1><asp:Label ID="lblEvents" runat="server" Text="0" /></h1>
+        <p>Events</p>
+    </div>
+
+    <div class="card members">
+        <i class="fa-solid fa-users icon"></i>
+        <h1><asp:Label ID="lblMembers" runat="server" Text="0" /></h1>
+        <p>Members</p>
+    </div>
+
+    <div class="card projects">
+        <i class="fa-solid fa-robot"></i>
+        <h1><asp:Label ID="lblProjects" runat="server" Text="0" /></h1>
+        <p>Projects</p>
+    </div>
+
+</div>
+
+</div>
 
 </asp:Content>

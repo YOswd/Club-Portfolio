@@ -278,9 +278,8 @@ textarea {
     flex-wrap: wrap;
 }
 
-.stat-box {
-    flex: 1;
-    min-width: 120px;
+..stat-box {
+    flex: 1 1 220px;
     text-align: center;
     padding: 20px;
     background: white;
@@ -337,6 +336,12 @@ section {
 }
 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.page-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;

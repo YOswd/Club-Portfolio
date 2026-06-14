@@ -36,9 +36,13 @@ namespace HACK_KUET
                 SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM Events", con);
                 lblEvents.Text = cmd2.ExecuteScalar().ToString();
 
-                // Members (if table exists)
+                // Members
                 SqlCommand cmd3 = new SqlCommand("SELECT COUNT(*) FROM Members", con);
                 lblMembers.Text = cmd3.ExecuteScalar().ToString();
+
+                // Projects
+                SqlCommand cmd4 = new SqlCommand("SELECT COUNT(*) FROM Projects", con);
+                lblProjects.Text = cmd4.ExecuteScalar().ToString();
             }
         }
     }
