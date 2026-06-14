@@ -1,4 +1,45 @@
+// ===== TYPEWRITER EFFECT =====
+(function () {
+    const phrases = [
+        "Innovate. Build. Compete.",
+        "Robotics & Embedded Systems.",
+        "IoT & Smart Engineering.",
+        "Building the Future of Tech."
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const el = document.getElementById("typewriterText");
+
+    function type() {
+        if (!el) return;
+        const current = phrases[phraseIndex];
+
+        if (isDeleting) {
+            el.textContent = current.substring(0, charIndex--);
+        } else {
+            el.textContent = current.substring(0, charIndex++);
+        }
+
+        let delay = isDeleting ? 50 : 90;
+
+        if (!isDeleting && charIndex === current.length + 1) {
+            delay = 1800;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            delay = 400;
+        }
+
+        setTimeout(type, delay);
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+})();
+
 document.querySelectorAll("a").forEach(link => {
+
     link.addEventListener("click", function (e) {
 
         const target = this.getAttribute("href");

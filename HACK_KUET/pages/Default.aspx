@@ -1,4 +1,4 @@
-﻿<%@ Page Title="HACK KUET" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HACK_KUET.Default" %>
+<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HACK_KUET.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <!-- Page-specific CSS or scripts if needed -->
@@ -15,7 +15,9 @@
 
             <h1>Hardware Acceleration Club of KUET</h1>
 
-            <p>Innovate. Build. Compete.</p>
+            <p class="hero-animated-text">
+                <span class="typewriter" id="typewriterText"></span><span class="cursor">|</span>
+            </p>
 
            <button type="button" class="btn"
     onclick="window.location.href='/pages/Contact.aspx'">
@@ -34,19 +36,29 @@
 
 <!-- ABOUT -->
 <section id="about" class="reveal">
+    <div class="container">
+        <div class="about-layout">
 
-    <h2>ABOUT US</h2>
+            <div class="about-img-col">
+                <img src='<%= ResolveUrl("~/images/HACK.jpg") %>' alt="HACK KUET" class="about-img">
+            </div>
 
-    <p>
-        We are a community of KUET students passionate about robotics,
-        embedded systems, and IoT.
-    </p>
+            <div class="about-text-col">
+                <span class="about-badge">Who We Are</span>
+                <h2>ABOUT US</h2>
+                <p>
+                    We are a community of KUET students passionate about robotics,
+                    embedded systems, and IoT. From building autonomous robots to competing
+                    in national championships, HACK KUET is where innovation meets engineering.
+                </p>
+                <button type="button" class="btn"
+                    onclick="window.location.href='/pages/About.aspx'">
+                    Read More &rarr;
+                </button>
+            </div>
 
-    <button type="button" class="btn"
-    onclick="window.location.href='/pages/About.aspx'">
-    Read More
-</button>
-
+        </div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
@@ -54,7 +66,7 @@
     <div class="container">
         <div class="section-header">
     <h2>FEATURED PROJECTS</h2>
-    <a href="Projects.aspx" class="see-all-btn">SEE ALL PROJECTS →</a>
+    <a href="Projects.aspx" class="see-all-btn">SEE ALL PROJECTS &rarr;</a>
 </div>
 
 <div class="project-grid">
@@ -93,7 +105,7 @@
     <div class="container">
         <div class="section-header">
     <h2>ACHIEVEMENTS</h2>
-    <a href="Achievements.aspx" class="see-all-btn">VIEW ALL →</a>
+    <a href="Achievements.aspx" class="see-all-btn">VIEW ALL &rarr;</a>
 </div>
 
 <div class="grid">
@@ -107,7 +119,7 @@
 <!-- EVENTS -->
 <section id="events" class="reveal">
 
-    <div class="section-container">
+    <div class="container">
 
         <div class="section-header">
             <div class="title-area">
@@ -115,7 +127,7 @@
                 <h2>OUR<br>RECENT EVENTS</h2>
             </div>
 
-            <a href="Events.aspx" class="see-all-btn">SEE ALL →</a>
+            <a href="Events.aspx" class="see-all-btn">SEE ALL &rarr;</a>
         </div>
 
         <div class="events-grid">
@@ -152,7 +164,7 @@
     <div class="container">
         <div class="section-header">
     <h2>GALLERY</h2>
-    <a href="Gallery.aspx" class="see-all-btn">VIEW FULL GALLERY →</a>
+    <a href="Gallery.aspx" class="see-all-btn">VIEW FULL GALLERY &rarr;</a>
 </div>
 
 <div class="gallery">
@@ -196,18 +208,18 @@
 
 <!-- JOIN -->
 <section class="join-section reveal">
+    <div class="container">
+        <h2>Ready To Join HACK KUET?</h2>
 
-    <h2>Ready To Join HACK KUET?</h2>
+        <p>
+            Become part of a community of innovators, makers, and problem solvers.
+        </p>
 
-    <p>
-        Become part of a community of innovators, makers, and problem solvers.
-    </p>
-
-    <button type="button" class="btn"
-    onclick="window.location.href='/pages/Contact.aspx'">
-    Contact Us
-</button>
-
+        <button type="button" class="btn"
+        onclick="window.location.href='/pages/Contact.aspx'">
+        Contact Us
+    </button>
+    </div>
 </section>
 
 </asp:Content>

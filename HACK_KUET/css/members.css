@@ -14,13 +14,11 @@
         color: #cbd5e1;
     }
 
-/* SECTION SPACING */
 section {
-    padding: 70px 20px;
+    padding: 70px 8%;
     text-align: center;
 }
 
-/* GRID (MODERN REPLACEMENT FOR FLEX) */
 .member-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -31,7 +29,6 @@ section {
     align-items: stretch;
 }
 
-/* CARD DESIGN */
 .member-card {
     background: #ffffff;
     border-radius: 16px;
@@ -48,7 +45,6 @@ section {
         box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     }
 
-    /* IMAGE */
     .member-card img {
         width: 120px;
         height: 120px;
@@ -58,7 +54,6 @@ section {
         margin-bottom: 15px;
     }
 
-    /* TEXT */
     .member-card h3 {
         font-size: 1.05rem;
         margin: 6px 0 4px;
@@ -77,13 +72,11 @@ section {
         margin: 0;
     }
 
-/* ADVISOR SPECIAL */
 .advisor {
     max-width: 320px;
     margin: 0 auto;
 }
 
-/* RESPONSIVE TWEAK */
 @media (max-width: 600px) {
     .page-hero h1 {
         font-size: 2.2rem;

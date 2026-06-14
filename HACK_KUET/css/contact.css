@@ -1,5 +1,4 @@
 .contact-container {
-
     max-width: 1200px;
     margin: auto;
     display: grid;
@@ -9,22 +8,18 @@
 }
 
 .contact-info {
-
     text-align: left;
 }
 
-.contact-info h2 {
+    .contact-info h2 {
+        margin-bottom: 20px;
+    }
 
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-
-    margin-bottom: 30px;
-}
+    .contact-info p {
+        margin-bottom: 30px;
+    }
 
 .contact-item {
-
     display: flex;
     align-items: center;
     gap: 15px;
@@ -32,8 +27,7 @@
     font-size: 18px;
 }
 
-.contact-item i {
-
-    color: #ff9800;
-    font-size: 22px;
-}
+    .contact-item i {
+        color: #ff9800;
+        font-size: 22px;
+    }

@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HACK_KUET.SiteMaster" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HACK_KUET.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>HACK | <%: Page.Title %></title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -15,6 +15,10 @@
     <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
 
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="~/css/common.css" />
     <link rel="stylesheet" href="~/css/footer.css" />
     <link rel="stylesheet" href="~/css/home.css" />
@@ -25,7 +29,7 @@
     <link rel="stylesheet" href="~/css/members.css" />
     <link rel="stylesheet" href="~/css/projects.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href='<%= ResolveUrl("~/favicon.ico") %>' rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" href='<%= ResolveUrl("~/images/HACK.jpg") %>' />
 </head>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -144,11 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <h3>Resources</h3>
 
             <ul>
-                <li><a href="#">Workshops</a></li>
-                <li><a href="#">Competitions</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Training</a></li>
-                <li><a href="#">Achievements</a></li>
+                <li><a href='<%= ResolveUrl("~/pages/Gallery.aspx") %>'>Gallery</a></li>
+                <li><a href='<%= ResolveUrl("~/pages/Achievements.aspx") %>'>Achievements</a></li>
             </ul>
 
         </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="HACK_KUET.Contact" %>
+<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="HACK_KUET.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -8,65 +8,66 @@
 </section>
 
 <section>
+    <div class="container">
+        <div class="contact-container">
 
-    <div class="contact-container">
+            <!-- Left Side -->
 
-        <!-- Left Side -->
+            <div class="contact-info">
 
-        <div class="contact-info">
+                <h2>Get In Touch</h2>
 
-            <h2>Get In Touch</h2>
+                <p>
+                    Interested in robotics, embedded systems,
+                    IoT or hardware projects?
+                    Join our community.
+                </p>
 
-            <p>
-                Interested in robotics, embedded systems,
-                IoT or hardware projects?
-                Join our community.
-            </p>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hack@kuet.ac.bd</span>
+                </div>
 
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>hack@kuet.ac.bd</span>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+880 1XXXXXXXXX</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Khulna University of Engineering & Technology</span>
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/share/1Redgdfcbi/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@hack-hardwareaccelerationc9241"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
             </div>
 
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+880 1XXXXXXXXX</span>
-            </div>
+            <!-- Right Side -->
 
-            <div class="contact-item">
-                <i class="fas fa-location-dot"></i>
-                <span>Khulna University of Engineering & Technology</span>
-            </div>
+            <div class="contact-form">
 
-            <div class="social-links">
+        <h2>Send Message</h2>
 
-                <a href="https://www.facebook.com/share/1Redgdfcbi/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.youtube.com/@hack-hardwareaccelerationc9241"><i class="fab fa-youtube"></i></a>
+        <asp:TextBox ID="txtName" runat="server" placeholder="Full Name" CssClass="input"></asp:TextBox>
 
-            </div>
+        <asp:TextBox ID="txtEmail" runat="server" placeholder="Email Address" CssClass="input"></asp:TextBox>
+
+        <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject" CssClass="input"></asp:TextBox>
+
+        <asp:TextBox ID="txtMessage" runat="server" TextMode="MultiLine"
+            placeholder="Write your message here..." CssClass="input"></asp:TextBox>
+
+        <asp:Button ID="btnSend" runat="server" Text="Send Message"
+            CssClass="btn" OnClick="btnSend_Click" />
+
+          </div>
 
         </div>
-
-        <!-- Right Side -->
-
-        <div class="contact-form">
-
-    <h2>Send Message</h2>
-
-    <asp:TextBox ID="txtName" runat="server" placeholder="Full Name" CssClass="input"></asp:TextBox>
-
-    <asp:TextBox ID="txtEmail" runat="server" placeholder="Email Address" CssClass="input"></asp:TextBox>
-
-    <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject" CssClass="input"></asp:TextBox>
-
-    <asp:TextBox ID="txtMessage" runat="server" TextMode="MultiLine"
-        placeholder="Write your message here..." CssClass="input"></asp:TextBox>
-
-    <asp:Button ID="btnSend" runat="server" Text="Send Message"
-        CssClass="btn" OnClick="btnSend_Click" />
-
-      </div>
-
     </div>
 
 </section>
