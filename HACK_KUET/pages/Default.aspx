@@ -180,8 +180,6 @@
 <!-- STATS -->
 <section>
     <div class="container">
-        <h2>Club Statistics</h2>
-
         <div class="stats">
 
             <div class="stat-box">
