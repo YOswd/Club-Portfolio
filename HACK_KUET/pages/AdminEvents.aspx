@@ -111,14 +111,14 @@ Inherits="HACK_KUET.AdminEvents" %>
         <asp:TemplateField HeaderText="Action">
     <ItemTemplate>
 
-        <div style="display:flex; gap:8px; justify-content:center; align-items:center;">
+        <div class="action-buttons">
 
             <asp:Button 
                 ID="btnEdit" 
                 runat="server"
                 Text="Edit"
                 CssClass="btn-edit"
-                CommandName="EditMember"
+                CommandName="EditEvent"
                 CommandArgument='<%# Eval("Id") %>' />
 
             <asp:Button 
@@ -126,9 +126,9 @@ Inherits="HACK_KUET.AdminEvents" %>
                 runat="server"
                 Text="Delete"
                 CssClass="btn-delete"
-                CommandName="DeleteMember"
+                CommandName="DeleteEvent"
                 CommandArgument='<%# Eval("Id") %>'
-                OnClientClick="return confirm('Delete this member?');" />
+                OnClientClick="return confirm('Delete this event?');" />
 
         </div>
 

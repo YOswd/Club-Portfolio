@@ -1,14 +1,26 @@
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
 .stat-box {
-    background: white;
+    flex: 1 1 220px;
+    max-width: 260px;
+    background: #fff;
     padding: 25px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
-    transition: .3s;
+    transition: all 0.3s ease;
 }
 
     .stat-box:hover {
         transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0,0,0,.15);
     }
 
     .stat-box h1 {

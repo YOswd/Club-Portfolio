@@ -40,7 +40,7 @@
         <div class="about-layout">
 
             <div class="about-img-col">
-                <img src='<%= ResolveUrl("~/images/HACK.jpg") %>' alt="HACK KUET" class="about-img">
+                <img src='<%= ResolveUrl("~/images/arm.jpg") %>' alt="HACK KUET" class="about-img">
             </div>
 
             <div class="about-text-col">
